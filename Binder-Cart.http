@@ -1,0 +1,6 @@
+@Binder_Cart_HostAddress = http://localhost:5177
+
+GET {{Binder_Cart_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
