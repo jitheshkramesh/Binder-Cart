@@ -10,8 +10,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Binder_Cart.Controllers
 {
     [Route("api/Category")]
-    [ApiController]
-    [Authorize]
+    [ApiController] 
     public class CategoryController : ControllerBase
     {
         private readonly ApplicationDbContext _db;
@@ -109,7 +108,7 @@ namespace Binder_Cart.Controllers
         [NonAction]
         public string GetActualpath(string FileName)
         {
-            return _hostingEnv.WebRootPath + "\\Uploads\\Category\\" + FileName;
+            return _hostingEnv.WebRootPath + "\\Jithesh\\Project Files\\Test\\ASP.NET\\Binder-Cart\\ClientApp\\BinderUI\\src\\assets\\Uploads\\Category\\" + FileName;
 
         }
 
@@ -122,7 +121,7 @@ namespace Binder_Cart.Controllers
                 string userId = user.Id.ToString();
 
                 Category category = _mapper.Map<Category>(CategoryDto);
-                category.CategoryImageLocalPath = GetActualpath(CategoryDto.CategoryImageUrl);
+               // category.CategoryImageLocalPath = GetActualpath(CategoryDto.CategoryImageUrl);
                 category.CreatedDate = DateTime.Now;
                 category.UpdatedDate = DateTime.Now;
                 category.CreatedId = userId;
@@ -217,8 +216,7 @@ namespace Binder_Cart.Controllers
         }
 
         [HttpDelete]
-        [Route("{id:int}")]
-        [Authorize(Roles = UserRoles.Admin)]
+        [Route("{id:int}")] 
         public ResponseDto Delete(int id)
         {
             try

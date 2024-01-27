@@ -14,7 +14,7 @@ namespace Binder_Cart.Controllers
 {
     [Route("api/Brand")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class BrandController : ControllerBase
     {
         private readonly ApplicationDbContext _db;
@@ -114,7 +114,7 @@ namespace Binder_Cart.Controllers
         [NonAction]
         public string GetActualpath(string FileName)
         {
-            return _hostingEnv.WebRootPath + "\\Uploads\\Brands\\" + FileName;
+            return _hostingEnv.WebRootPath + "\\Jithesh\\Project Files\\Test\\ASP.NET\\Binder-Cart\\ClientApp\\BinderUI\\src\\assets\\Uploads\\Brands\\" + FileName;
 
         }
 
@@ -129,7 +129,7 @@ namespace Binder_Cart.Controllers
                 string userId = user.Id.ToString();
 
                 Brand brand = _mapper.Map<Brand>(brandDto);
-                brand.BrandImageLocalPath = GetActualpath(brandDto.BrandImageUrl);
+               // brand.BrandImageLocalPath = GetActualpath(brandDto.BrandImageUrl);
                 brand.CreatedDate = DateTime.Now;
                 brand.UpdatedDate = DateTime.Now;
                 brand.CreatedId= userId;
@@ -224,8 +224,7 @@ namespace Binder_Cart.Controllers
         }
 
         [HttpDelete]
-        [Route("{id:int}")]
-        [Authorize(Roles = UserRoles.Admin)]
+        [Route("{id:int}")] 
         public ResponseDto Delete(int id)
         {
             try
