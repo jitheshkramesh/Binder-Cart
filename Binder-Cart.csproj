@@ -10,9 +10,13 @@
 
   <ItemGroup>
     <Compile Remove="ClientApp\**" />
+    <Compile Remove="Uploads\**" />
     <Content Remove="ClientApp\**" />
+    <Content Remove="Uploads\**" />
     <EmbeddedResource Remove="ClientApp\**" />
+    <EmbeddedResource Remove="Uploads\**" />
     <None Remove="ClientApp\**" />
+    <None Remove="Uploads\**" />
   </ItemGroup>
 
   <ItemGroup>

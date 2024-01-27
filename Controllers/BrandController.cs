@@ -4,36 +4,47 @@ using Binder_Cart.Data;
 using Binder_Cart.Dtos;
 using Binder_Cart.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims; 
 
 namespace Binder_Cart.Controllers
 {
     [Route("api/Brand")]
     [ApiController]
+    [Authorize]
     public class BrandController : ControllerBase
     {
         private readonly ApplicationDbContext _db;
         private readonly ILogger<AuthenticationController> _logger;
         private IMapper _mapper;
         private ResponseDto _response;
+        private IWebHostEnvironment _hostingEnv; 
+        private readonly UserManager<ApplicationUser> _userManager;
         public BrandController(ApplicationDbContext dbContext,
             ILogger<AuthenticationController> logger,
-            IMapper mapper)
+            IMapper mapper,
+            IWebHostEnvironment hostingEnv, 
+            UserManager<ApplicationUser> userManager)
         {
             _db = dbContext;
             _logger = logger;
             _mapper = mapper;
             _response = new ResponseDto();
+            _hostingEnv = hostingEnv; 
+            _userManager = userManager;
         }
-
+         
 
         [HttpGet]
-        public ResponseDto Get()
+        public async Task<ResponseDto> GetAsync()
         {
             try
             {
-                IEnumerable<Brand> objList = _db.Brands.ToList();
+
+                IEnumerable<Brand> objList =await _db.Brands.ToListAsync();
                 _response.Result = _mapper.Map<IEnumerable<BrandDto>>(objList);
             }
             catch (Exception ex)
@@ -61,45 +72,100 @@ namespace Binder_Cart.Controllers
             return _response;
         }
 
+        [HttpPost("UploadImage")]
+        public async Task<ActionResult> UploadImage()
+        {
+            bool Result = false;
+            var Files = Request.Form.Files;
+            foreach (IFormFile source in Files)
+            {
+                string FileName = source.FileName;
+                string imagepath = GetActualpath(FileName);
+                try
+                { 
+
+                    string Filepath = imagepath;
+
+                    if (System.IO.File.Exists(Filepath))
+                        System.IO.File.Delete(Filepath);
+
+                    //using (FileStream stream = System.IO.File.Create(Filepath))
+                    //{
+                    // await   source.CopyToAsync(stream);
+                    //    Result = true;
+                    //}
+
+                    var filePathDirectory = Path.Combine(Directory.GetCurrentDirectory(), Filepath);
+                    using (var fileStream = new FileStream(filePathDirectory, FileMode.Create))
+                    {
+                        await source.CopyToAsync(fileStream);
+                        Result = true;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+
+            return Ok(Result);
+        }
+
+        [NonAction]
+        public string GetActualpath(string FileName)
+        {
+            return _hostingEnv.WebRootPath + "\\Uploads\\Brands\\" + FileName;
+
+        }
+
         [HttpPost]
-        [Authorize(Roles = UserRoles.Admin)]
-        public ResponseDto Post(BrandDto brandDto)
+        //[Authorize(Roles = UserRoles.Admin)]
+        public async Task<ResponseDto> Post([FromBody] BrandDto brandDto)
         {
             try
             {
+
+                var user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
+                string userId = user.Id.ToString();
+
                 Brand brand = _mapper.Map<Brand>(brandDto);
+                brand.BrandImageLocalPath = GetActualpath(brandDto.BrandImageUrl);
+                brand.CreatedDate = DateTime.Now;
+                brand.UpdatedDate = DateTime.Now;
+                brand.CreatedId= userId;
+                brand.UpdatedId= userId;
                 _db.Brands.Add(brand);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
 
-                if (brandDto.BrandImageUrl != null)
-                {
+                //if (brandDto.BrandImageUrl != null)
+                //{
 
-                    string fileName = brand.Id + Path.GetExtension(brandDto.BrandImage.FileName);
-                    string filePath = @"wwwroot\BrandImages\" + fileName;
+                //    string fileName = brand.Id + Path.GetExtension(brandDto.BrandImage.FileName);
+                //    string filePath = @"wwwroot\BrandImages\" + fileName;
 
-                    //I have added the if condition to remove the any image with same name if that exist in the folder by any change
-                    var directoryLocation = Path.Combine(Directory.GetCurrentDirectory(), filePath);
-                    FileInfo file = new FileInfo(directoryLocation);
-                    if (file.Exists)
-                    {
-                        file.Delete();
-                    }
+                //    //I have added the if condition to remove the any image with same name if that exist in the folder by any change
+                //    var directoryLocation = Path.Combine(Directory.GetCurrentDirectory(), filePath);
+                //    FileInfo file = new FileInfo(directoryLocation);
+                //    if (file.Exists)
+                //    {
+                //        file.Delete();
+                //    }
 
-                    var filePathDirectory = Path.Combine(Directory.GetCurrentDirectory(), filePath);
-                    using (var fileStream = new FileStream(filePathDirectory, FileMode.Create))
-                    {
-                        brandDto.BrandImage.CopyTo(fileStream);
-                    }
-                    var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.Value}{HttpContext.Request.PathBase.Value}";
-                    brand.BrandImageUrl = baseUrl + "/BrandImages/" + fileName;
-                    brand.BrandImageLocalPath = filePath;
-                }
-                else
-                {
-                    brand.BrandImageUrl = "https://placehold.co/600x400";
-                }
-                _db.Brands.Update(brand);
-                _db.SaveChanges();
+                //    var filePathDirectory = Path.Combine(Directory.GetCurrentDirectory(), filePath);
+                //    using (var fileStream = new FileStream(filePathDirectory, FileMode.Create))
+                //    {
+                //        brandDto.BrandImage.CopyTo(fileStream);
+                //    }
+                //    var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.Value}{HttpContext.Request.PathBase.Value}";
+                //    brand.BrandImageUrl = baseUrl + "/BrandImages/" + fileName;
+                //    brand.BrandImageLocalPath = filePath;
+                //}
+                //else
+                //{
+                //    brand.BrandImageUrl = "https://placehold.co/600x400";
+                //}
+                //_db.Brands.Update(brand);
+                //_db.SaveChanges();
                 _response.Result = _mapper.Map<BrandDto>(brand);
             }
             catch (Exception ex)

@@ -1,6 +1,10 @@
+using AutoMapper;
+using Binder_Cart;
 using Binder_Cart.Data;
 using Binder_Cart.Exceptions;
-using Binder_Cart.Models; 
+using Binder_Cart.Models;
+using Binder_Cart.Service;
+using Binder_Cart.Service.IService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
@@ -33,6 +37,11 @@ builder.Services.AddCors(opt =>
 
 var conStr = builder.Configuration.GetConnectionString("connStr");
 builder.Services.AddSqlServer<ApplicationDbContext>(conStr);
+
+IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
+builder.Services.AddSingleton(mapper);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+//builder.Services.AddScoped<IProductService, ProductService>();
 
 //builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();

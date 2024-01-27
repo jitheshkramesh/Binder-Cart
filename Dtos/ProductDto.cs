@@ -4,6 +4,7 @@ namespace Binder_Cart.Dtos
 {
     public class ProductDto
     { 
+        public int Id { get; set; }
         public required string ProductName { get; set; }
         public string? ProductDescription { get; set; } 
         public decimal ProductPrice { get; set; }
