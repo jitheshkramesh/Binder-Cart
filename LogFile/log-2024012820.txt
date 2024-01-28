@@ -1,0 +1,1478 @@
+2024-01-28 20:00:03.256 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:00:03.263 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:00:03.263 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:01:21.809 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:01:22.079 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:01:22.080 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:01:22.081 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:01:22.081 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:01:22.081 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:01:25.241 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:01:25.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 263.1196ms
+2024-01-28 20:01:25.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:01:25.521 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 8.9558ms
+2024-01-28 20:01:25.532 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:01:25.590 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.5866ms
+2024-01-28 20:01:25.647 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:01:25.790 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 142.9032ms
+2024-01-28 20:01:38.547 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:01:38.555 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:01:38.573 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:01:40.039 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:01:40.105 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:01:40.187 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:01:40.258 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 1681.8243ms
+2024-01-28 20:01:40.259 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:01:40.261 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 1707.3487 ms
+2024-01-28 20:01:40.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 97 application/json; charset=utf-8 1721.1509ms
+2024-01-28 20:01:57.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:01:57.890 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:01:57.891 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:01:57.930 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:01:57.931 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:02:05.064 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:02:05.065 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 7173.7762ms
+2024-01-28 20:02:05.065 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:02:05.065 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 7175.2453 ms
+2024-01-28 20:02:05.065 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 97 application/json; charset=utf-8 7177.7891ms
+2024-01-28 20:02:08.866 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:02:08.866 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:02:08.867 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:02:08.934 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:02:08.935 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:03:05.180 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:03:05.469 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:03:05.469 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:03:05.471 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:03:05.471 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:03:05.472 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:03:06.126 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:03:06.784 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 668.731ms
+2024-01-28 20:03:06.837 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:03:06.840 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:03:06.852 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 11.739ms
+2024-01-28 20:03:06.918 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.0923ms
+2024-01-28 20:03:07.056 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:03:07.321 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 265.3247ms
+2024-01-28 20:03:14.714 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:03:14.722 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:03:14.739 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:03:15.971 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+LEFT JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:03:16.025 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:05:36.278 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:05:36.463 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:05:36.463 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:05:36.464 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:05:36.464 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:05:36.464 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:05:39.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:05:39.932 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 261.6983ms
+2024-01-28 20:05:39.951 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:05:39.951 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:05:39.964 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 13.6013ms
+2024-01-28 20:05:40.007 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.5459ms
+2024-01-28 20:05:40.038 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:05:40.169 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.6802ms
+2024-01-28 20:05:48.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:05:48.973 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:05:48.998 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:05:50.376 +05:30 [INF] Executed DbCommand (56ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+LEFT JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:05:50.429 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:07:53.516 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:07:53.781 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:07:53.781 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:07:53.782 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:07:53.782 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:07:53.782 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:07:54.172 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:07:54.592 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 425.7912ms
+2024-01-28 20:07:54.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:07:54.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:07:54.637 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.3644ms
+2024-01-28 20:07:54.691 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.1126ms
+2024-01-28 20:07:54.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:07:54.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 205.9777ms
+2024-01-28 20:08:02.898 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:08:02.908 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:08:02.925 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:08:04.184 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:08:04.242 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:09:19.825 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:09:20.136 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:09:20.136 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:09:20.139 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:09:20.140 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:09:20.140 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:09:20.728 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:09:21.158 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 437.7944ms
+2024-01-28 20:09:21.167 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:09:21.177 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.2759ms
+2024-01-28 20:09:21.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:09:21.263 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.169ms
+2024-01-28 20:09:21.358 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:09:21.636 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 278.3311ms
+2024-01-28 20:09:30.072 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:09:30.084 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:09:30.102 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:09:31.421 +05:30 [INF] Executed DbCommand (69ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:09:31.489 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:16:50.367 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:16:50.572 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:16:50.573 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:16:50.574 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:16:50.574 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:16:50.574 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:16:53.750 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:16:54.012 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 263.5318ms
+2024-01-28 20:16:54.019 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:16:54.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.7305ms
+2024-01-28 20:16:54.034 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:16:54.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.8535ms
+2024-01-28 20:16:54.134 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:16:54.275 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 141.3275ms
+2024-01-28 20:17:04.632 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:17:04.647 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:17:04.669 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:17:06.361 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:17:06.430 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:17:51.491 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:17:51.756 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:17:51.756 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:17:51.757 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:17:51.758 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:17:51.758 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:17:53.655 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:17:53.945 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 293.7552ms
+2024-01-28 20:17:53.970 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:17:53.970 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:17:53.984 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 14.4973ms
+2024-01-28 20:17:54.033 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.9ms
+2024-01-28 20:17:54.085 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:17:54.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 207.5546ms
+2024-01-28 20:18:01.896 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:18:01.912 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:18:01.928 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:18:03.980 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:18:04.043 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:18:25.065 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:18:25.402 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:18:25.402 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:18:25.404 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:18:25.404 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:18:25.404 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:18:27.136 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:18:27.526 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 401.3524ms
+2024-01-28 20:18:27.536 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:18:27.547 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 11.0464ms
+2024-01-28 20:18:27.567 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:18:27.647 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.7785ms
+2024-01-28 20:18:27.768 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:18:27.991 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 223.3022ms
+2024-01-28 20:18:37.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:18:37.507 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:18:37.523 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:18:38.765 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:18:38.824 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:18:55.930 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:18:56.216 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:18:56.216 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:18:56.217 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:18:56.218 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:18:56.218 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:18:59.749 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:19:00.008 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 260.5826ms
+2024-01-28 20:19:00.043 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:19:00.043 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:19:00.049 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.2356ms
+2024-01-28 20:19:00.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.7185ms
+2024-01-28 20:19:00.130 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:19:00.262 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.7989ms
+2024-01-28 20:19:09.118 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:19:09.128 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:19:09.145 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:19:10.580 +05:30 [INF] Executed DbCommand (69ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:19:10.651 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-01-28 20:19:35.913 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:19:36.384 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:19:36.384 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:19:36.386 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:19:36.386 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:19:36.386 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:19:36.921 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:19:37.326 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 414.6979ms
+2024-01-28 20:19:37.334 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:19:37.344 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.9781ms
+2024-01-28 20:19:37.359 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:19:37.431 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.0663ms
+2024-01-28 20:19:37.525 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:19:37.767 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 242.5926ms
+2024-01-28 20:19:47.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:19:47.131 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:19:47.147 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:19:48.718 +05:30 [INF] Executed DbCommand (54ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:19:57.374 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:19:57.481 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 10330.3358ms
+2024-01-28 20:19:57.482 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:19:57.483 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 10357.2216 ms
+2024-01-28 20:19:57.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 127 application/json; charset=utf-8 10373.2078ms
+2024-01-28 20:21:00.588 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:21:00.919 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:21:00.920 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:21:00.921 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:21:00.922 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:21:00.922 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:21:04.219 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:21:04.529 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 315.3141ms
+2024-01-28 20:21:04.537 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:21:04.544 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.8884ms
+2024-01-28 20:21:04.555 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:21:04.622 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.5037ms
+2024-01-28 20:21:04.707 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:21:04.981 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 273.9758ms
+2024-01-28 20:21:11.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:21:11.454 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:21:11.475 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:21:12.675 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c0].[CartHeaderId], [c].[ProductId], [c].[Count]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:21:15.434 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:21:15.517 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 4037.7689ms
+2024-01-28 20:21:15.517 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:21:15.520 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 4068.9463 ms
+2024-01-28 20:21:15.526 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 181 application/json; charset=utf-8 4083.126ms
+2024-01-28 20:21:40.512 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:21:40.747 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:21:40.747 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:21:40.749 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:21:40.749 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:21:40.749 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:21:41.192 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:21:41.588 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 399.4604ms
+2024-01-28 20:21:41.592 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:21:41.600 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.6443ms
+2024-01-28 20:21:41.616 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:21:41.686 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.6463ms
+2024-01-28 20:21:41.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:21:41.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 220.9427ms
+2024-01-28 20:21:50.140 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:21:50.152 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:21:50.176 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:21:51.394 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[ProductId], [c].[Count], [c].[CartHeaderId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:21:51.453 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:21:51.533 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 1353.0186ms
+2024-01-28 20:21:51.534 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:21:51.536 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 1388.2218 ms
+2024-01-28 20:21:51.542 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 219 application/json; charset=utf-8 1402.0535ms
+2024-01-28 20:22:10.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:22:10.675 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:22:10.676 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:22:10.699 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[ProductId], [c].[Count], [c].[CartHeaderId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:22:32.625 +05:30 [INF] Executed DbCommand (35ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[ProductId], [c].[Count], [c].[CartHeaderId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:22:44.867 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:22:44.867 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 34191.5241ms
+2024-01-28 20:22:44.868 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:22:44.868 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 34192.7456 ms
+2024-01-28 20:22:44.868 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 219 application/json; charset=utf-8 34194.8523ms
+2024-01-28 20:22:48.223 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:22:48.224 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:22:48.224 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:22:56.518 +05:30 [INF] Executed DbCommand (85ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[ProductId], [c].[Count], [c].[CartHeaderId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:24:02.490 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:24:02.747 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:24:02.747 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:24:02.748 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:24:02.749 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:24:02.749 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:24:03.263 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:24:03.608 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 349.7954ms
+2024-01-28 20:24:03.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:24:03.626 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.6235ms
+2024-01-28 20:24:03.639 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:24:03.698 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.9592ms
+2024-01-28 20:24:03.770 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:24:04.041 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 271.258ms
+2024-01-28 20:24:13.968 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:24:13.978 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:24:13.995 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:24:50.252 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[ProductId], [c].[Count], [c].[CartHeaderId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:24:52.277 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:24:52.361 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 38362.2219ms
+2024-01-28 20:24:52.362 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:24:52.364 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 38388.5566 ms
+2024-01-28 20:24:52.373 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 219 application/json; charset=utf-8 38404.6131ms
+2024-01-28 20:25:55.454 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:25:55.706 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:25:55.706 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:25:55.707 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:25:55.708 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:25:55.708 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:25:59.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:25:59.922 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 249.0291ms
+2024-01-28 20:25:59.930 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:25:59.936 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.7365ms
+2024-01-28 20:25:59.946 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:25:59.993 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.1454ms
+2024-01-28 20:26:00.071 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:26:00.254 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 183.0734ms
+2024-01-28 20:26:09.967 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:26:09.976 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:26:09.993 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:26:11.176 +05:30 [INF] Executed DbCommand (54ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c0].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:26:11.207 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:26:11.286 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 1290.0961ms
+2024-01-28 20:26:11.287 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:26:11.288 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 1315.2396 ms
+2024-01-28 20:26:11.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 235 application/json; charset=utf-8 1327.9584ms
+2024-01-28 20:26:25.806 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:26:25.808 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:26:25.808 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:27:24.643 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:27:24.861 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:27:24.861 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:27:24.862 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:27:24.863 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:27:24.863 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:27:25.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:27:25.631 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 363.4485ms
+2024-01-28 20:27:25.637 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:27:25.645 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 8.0158ms
+2024-01-28 20:27:25.665 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:27:25.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.1566ms
+2024-01-28 20:27:25.815 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:27:26.069 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 254.7174ms
+2024-01-28 20:27:36.580 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:27:36.590 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:27:36.606 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:27:38.634 +05:30 [INF] Executed DbCommand (111ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:27:45.450 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:27:45.531 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 8921.3843ms
+2024-01-28 20:27:45.532 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:27:45.533 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 8947.1375 ms
+2024-01-28 20:27:45.539 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 235 application/json; charset=utf-8 8959.7486ms
+2024-01-28 20:27:56.436 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:27:56.437 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:27:56.438 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:29:46.608 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:29:46.913 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:29:46.913 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:29:46.914 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:29:46.914 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:29:46.914 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:29:49.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:29:50.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 277.2694ms
+2024-01-28 20:29:50.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:29:50.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:29:50.303 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.6716ms
+2024-01-28 20:29:50.344 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.7775ms
+2024-01-28 20:29:50.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:29:50.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.0143ms
+2024-01-28 20:30:00.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:30:00.233 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:30:00.250 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:30:17.757 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:30:22.636 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:30:22.723 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 22469.207ms
+2024-01-28 20:30:22.724 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:30:22.726 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 22494.1043 ms
+2024-01-28 20:30:22.733 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 235 application/json; charset=utf-8 22515.8172ms
+2024-01-28 20:31:39.308 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:31:39.657 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:31:39.657 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:31:39.660 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:31:39.661 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:31:39.661 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:31:42.947 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:31:43.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 373.9608ms
+2024-01-28 20:31:43.328 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:31:43.338 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.143ms
+2024-01-28 20:31:43.355 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:31:43.416 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.9927ms
+2024-01-28 20:31:43.513 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:31:43.741 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 229.2002ms
+2024-01-28 20:31:55.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:31:55.209 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:31:55.225 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:31:56.557 +05:30 [INF] Executed DbCommand (57ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:31:59.320 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:31:59.404 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 4174.9947ms
+2024-01-28 20:31:59.404 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:31:59.406 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 4200.2080 ms
+2024-01-28 20:31:59.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 646 application/json; charset=utf-8 4213.1678ms
+2024-01-28 20:32:19.739 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:32:19.741 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:32:19.741 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:32:36.019 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:32:38.549 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:32:38.550 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 18808.617ms
+2024-01-28 20:32:38.550 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:32:38.550 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 18809.8369 ms
+2024-01-28 20:32:38.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 646 application/json; charset=utf-8 18811.9922ms
+2024-01-28 20:36:31.706 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:36:31.738 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 32.5631ms
+2024-01-28 20:36:31.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:36:31.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:36:31.762 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8726ms
+2024-01-28 20:36:31.805 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.38ms
+2024-01-28 20:36:31.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:36:31.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.3056ms
+2024-01-28 20:37:43.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:37:43.893 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 20.6283ms
+2024-01-28 20:37:43.915 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:37:43.915 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:37:43.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.1249ms
+2024-01-28 20:37:43.954 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.9828ms
+2024-01-28 20:37:44.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:37:44.078 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.5393ms
+2024-01-28 20:40:15.586 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 20:40:15.593 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:40:15.593 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:40:15.669 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:40:15.670 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:40:15.670 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 76.9201ms
+2024-01-28 20:40:15.670 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:40:15.670 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 79.0800 ms
+2024-01-28 20:40:15.671 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 646 application/json; charset=utf-8 85.3906ms
+2024-01-28 20:42:01.421 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:42:01.440 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 19.1186ms
+2024-01-28 20:42:01.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:42:01.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:42:01.458 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.9792ms
+2024-01-28 20:42:01.479 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.9688ms
+2024-01-28 20:42:01.677 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:42:01.687 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.3985ms
+2024-01-28 20:42:04.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:42:04.411 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 13.1939ms
+2024-01-28 20:42:04.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:42:04.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:42:04.432 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.2986ms
+2024-01-28 20:42:04.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.0518ms
+2024-01-28 20:42:04.527 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:42:04.541 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.3131ms
+2024-01-28 20:42:23.150 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart - null null
+2024-01-28 20:42:23.171 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:42:23.174 +05:30 [INF] HTTP OPTIONS /api/cart responded 204 in 23.8003 ms
+2024-01-28 20:42:23.175 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart - 204 null null 25.5634ms
+2024-01-28 20:42:23.202 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart - application/json null
+2024-01-28 20:42:23.430 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:42:23.431 +05:30 [INF] HTTP GET /api/cart responded 404 in 1.2636 ms
+2024-01-28 20:42:23.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart - 404 0 null 231.2062ms
+2024-01-28 20:42:23.434 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7105/api/cart, Response status code: 404
+2024-01-28 20:42:27.580 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart - application/json null
+2024-01-28 20:42:27.581 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:42:27.581 +05:30 [INF] HTTP GET /api/cart responded 404 in 0.1030 ms
+2024-01-28 20:42:27.581 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart - 404 0 null 2.0732ms
+2024-01-28 20:42:27.581 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7105/api/cart, Response status code: 404
+2024-01-28 20:42:30.697 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - null null
+2024-01-28 20:42:30.698 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:42:30.698 +05:30 [INF] HTTP OPTIONS /api/Authentication/Login responded 204 in 0.2247 ms
+2024-01-28 20:42:30.698 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - 204 null null 0.8811ms
+2024-01-28 20:42:30.700 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/Authentication/Login - application/json 43
+2024-01-28 20:42:30.701 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:42:30.701 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-28 20:42:30.707 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Binder_Cart.Dtos.LoginDto) on controller Binder_Cart.Controllers.AuthenticationController (Binder-Cart).
+2024-01-28 20:42:30.805 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:42:31.035 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-01-28 20:42:31.040 +05:30 [INF] Login successfully {"FirstName":"User7","LastName":"A","Id":"c0bc4d17-f79e-4a26-8510-f71680044125","UserName":"user7","NormalizedUserName":"USER7","Email":"user7@test.com","NormalizedEmail":"USER7@TEST.COM","EmailConfirmed":false,"PasswordHash":"AQAAAAIAAYagAAAAEOXh7lJRtbejtE5GaXMJD4udsW44vforsupMjsqei2tPCt8t6XD20LJW5E5n1EqeBA==","SecurityStamp":"GWVDVNUVC5CRGH76ODQJHIHV5WUSQYZN","ConcurrencyStamp":"ee458088-cf09-4a3c-a7b6-c13feb33ab69","PhoneNumber":null,"PhoneNumberConfirmed":false,"TwoFactorEnabled":false,"LockoutEnd":null,"LockoutEnabled":true,"AccessFailedCount":0,"$type":"ApplicationUser"}
+2024-01-28 20:42:31.050 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-28 20:42:31.051 +05:30 [INF] Executed action Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart) in 344.0754ms
+2024-01-28 20:42:31.051 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-28 20:42:31.051 +05:30 [INF] HTTP POST /api/Authentication/Login responded 200 in 349.7728 ms
+2024-01-28 20:42:31.052 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/Authentication/Login - 200 421 application/json; charset=utf-8 351.6739ms
+2024-01-28 20:42:39.665 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart - null null
+2024-01-28 20:42:39.665 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:42:39.665 +05:30 [INF] HTTP OPTIONS /api/cart responded 204 in 0.2769 ms
+2024-01-28 20:42:39.665 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart - 204 null null 0.9918ms
+2024-01-28 20:42:39.670 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart - application/json null
+2024-01-28 20:42:39.671 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:42:39.671 +05:30 [INF] HTTP GET /api/cart responded 404 in 0.2098 ms
+2024-01-28 20:42:39.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart - 404 0 null 2.6145ms
+2024-01-28 20:42:39.672 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7105/api/cart, Response status code: 404
+2024-01-28 20:44:36.586 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart - null null
+2024-01-28 20:44:36.587 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:44:36.588 +05:30 [INF] HTTP OPTIONS /api/cart responded 204 in 0.3114 ms
+2024-01-28 20:44:36.591 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart - 204 null null 5.1011ms
+2024-01-28 20:44:36.593 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart - application/json null
+2024-01-28 20:44:36.594 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:44:36.594 +05:30 [INF] HTTP GET /api/cart responded 404 in 0.0706 ms
+2024-01-28 20:44:36.594 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart - 404 0 null 0.694ms
+2024-01-28 20:44:36.594 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7105/api/cart, Response status code: 404
+2024-01-28 20:45:35.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/c0bc4d17-f79e-4a26-8510-f71680044125 - null null
+2024-01-28 20:45:35.995 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:45:35.995 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:45:36.037 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:45:36.037 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:45:36.038 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 42.2109ms
+2024-01-28 20:45:36.038 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:45:36.038 +05:30 [INF] HTTP GET /api/cart/GetCart/c0bc4d17-f79e-4a26-8510-f71680044125 responded 200 in 43.1889 ms
+2024-01-28 20:45:36.038 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/c0bc4d17-f79e-4a26-8510-f71680044125 - 200 930 application/json; charset=utf-8 44.3796ms
+2024-01-28 20:45:59.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart - null null
+2024-01-28 20:45:59.030 +05:30 [INF] HTTP GET /api/cart responded 404 in 0.0229 ms
+2024-01-28 20:45:59.031 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart - 404 0 null 18.6681ms
+2024-01-28 20:45:59.031 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7105/api/cart, Response status code: 404
+2024-01-28 20:46:13.094 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart - null null
+2024-01-28 20:46:13.095 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:46:13.095 +05:30 [INF] HTTP OPTIONS /api/cart responded 204 in 0.1336 ms
+2024-01-28 20:46:13.095 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart - 204 null null 2.2072ms
+2024-01-28 20:46:13.106 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart - application/json null
+2024-01-28 20:46:13.106 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:46:13.106 +05:30 [INF] HTTP GET /api/cart responded 404 in 0.1089 ms
+2024-01-28 20:46:13.107 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart - 404 0 null 0.76ms
+2024-01-28 20:46:13.107 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7105/api/cart, Response status code: 404
+2024-01-28 20:47:18.817 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:47:18.818 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:47:18.818 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.3329 ms
+2024-01-28 20:47:18.819 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 2.3356ms
+2024-01-28 20:47:18.823 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:47:18.824 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:47:18.824 +05:30 [INF] HTTP GET /api/cart/GetCart responded 404 in 0.1635 ms
+2024-01-28 20:47:18.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 404 0 null 1.1968ms
+2024-01-28 20:47:18.824 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7105/api/cart/GetCart, Response status code: 404
+2024-01-28 20:49:34.077 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 20:49:34.373 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 20:49:34.373 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 20:49:34.375 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 20:49:34.375 +05:30 [INF] Hosting environment: Development
+2024-01-28 20:49:34.375 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 20:49:37.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:49:37.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 299.9656ms
+2024-01-28 20:49:37.790 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:49:37.797 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.0283ms
+2024-01-28 20:49:37.806 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:49:37.859 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.9927ms
+2024-01-28 20:49:37.909 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:49:38.067 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 158.606ms
+2024-01-28 20:49:45.385 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:49:45.401 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:49:45.403 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 11.8882 ms
+2024-01-28 20:49:45.403 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 18.903ms
+2024-01-28 20:49:45.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:49:45.471 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:49:45.473 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:49:45.485 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:49:47.068 +05:30 [INF] Executed DbCommand (79ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:49:47.323 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:49:47.335 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:49:47.463 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 1973.1528ms
+2024-01-28 20:49:47.464 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:49:47.465 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 1994.4910 ms
+2024-01-28 20:49:47.475 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 930 application/json; charset=utf-8 2069.6536ms
+2024-01-28 20:50:54.903 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:50:54.938 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 34.467ms
+2024-01-28 20:50:54.952 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:50:54.952 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:50:54.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5191ms
+2024-01-28 20:50:54.990 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.8623ms
+2024-01-28 20:50:55.101 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:50:55.133 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.9974ms
+2024-01-28 20:50:56.489 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:50:56.508 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:50:56.509 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 1.8063 ms
+2024-01-28 20:50:56.510 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 21.1833ms
+2024-01-28 20:50:56.523 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:50:56.526 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:50:56.527 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:50:56.530 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:50:56.621 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:50:56.650 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:50:56.651 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:50:56.652 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 122.0002ms
+2024-01-28 20:50:56.652 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:50:56.652 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 126.0497 ms
+2024-01-28 20:50:56.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 930 application/json; charset=utf-8 132.2813ms
+2024-01-28 20:51:15.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:51:15.581 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 16.5497ms
+2024-01-28 20:51:15.597 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:51:15.597 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:51:15.598 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.6277ms
+2024-01-28 20:51:15.623 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.3879ms
+2024-01-28 20:51:15.698 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:51:15.719 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.0818ms
+2024-01-28 20:51:17.256 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:51:17.257 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:51:17.257 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.4423 ms
+2024-01-28 20:51:17.257 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 1.0793ms
+2024-01-28 20:51:17.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:51:17.290 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:51:17.290 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:51:17.291 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:51:17.589 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:51:17.622 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:51:17.623 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:51:17.624 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 333.3297ms
+2024-01-28 20:51:17.624 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:51:17.624 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 334.8318 ms
+2024-01-28 20:51:17.626 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 930 application/json; charset=utf-8 337.2097ms
+2024-01-28 20:52:01.526 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:52:01.533 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 7.8044ms
+2024-01-28 20:52:01.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:52:01.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:52:01.566 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.2644ms
+2024-01-28 20:52:01.609 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.7825ms
+2024-01-28 20:52:01.748 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:52:01.766 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.3812ms
+2024-01-28 20:52:03.157 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:52:03.165 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:52:03.165 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.5972 ms
+2024-01-28 20:52:03.166 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 9.821ms
+2024-01-28 20:52:03.171 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:52:03.173 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:52:03.177 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:52:03.178 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:52:03.205 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:52:03.237 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:52:03.238 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:52:03.239 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 60.7799ms
+2024-01-28 20:52:03.239 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:52:03.239 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 65.8409 ms
+2024-01-28 20:52:03.239 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 930 application/json; charset=utf-8 69.3466ms
+2024-01-28 20:52:10.600 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/product - null null
+2024-01-28 20:52:10.601 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:52:10.601 +05:30 [INF] HTTP OPTIONS /api/product responded 204 in 0.1388 ms
+2024-01-28 20:52:10.601 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/product - 204 null null 1.2644ms
+2024-01-28 20:52:10.611 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - application/json null
+2024-01-28 20:52:10.612 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:52:10.612 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:52:10.615 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:52:10.643 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:52:10.706 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:52:10.714 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 99.6248ms
+2024-01-28 20:52:10.715 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:52:10.715 +05:30 [INF] HTTP GET /api/product responded 200 in 103.0583 ms
+2024-01-28 20:52:10.715 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 103.8138ms
+2024-01-28 20:52:37.377 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - null null
+2024-01-28 20:52:37.378 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:52:37.378 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:52:37.390 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:52:37.395 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:52:37.396 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 17.4382ms
+2024-01-28 20:52:37.396 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:52:37.396 +05:30 [INF] HTTP GET /api/product responded 200 in 17.8154 ms
+2024-01-28 20:52:37.396 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 18.8706ms
+2024-01-28 20:53:47.149 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:53:47.204 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 54.2013ms
+2024-01-28 20:53:47.236 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:53:47.236 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:53:47.241 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8981ms
+2024-01-28 20:53:47.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.958ms
+2024-01-28 20:53:47.454 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:53:47.467 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.4221ms
+2024-01-28 20:53:49.049 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/product - null null
+2024-01-28 20:53:49.049 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:53:49.049 +05:30 [INF] HTTP OPTIONS /api/product responded 204 in 0.3170 ms
+2024-01-28 20:53:49.050 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/product - 204 null null 4.0888ms
+2024-01-28 20:53:49.096 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - application/json null
+2024-01-28 20:53:49.098 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:53:49.098 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:53:49.099 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:53:49.167 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:53:49.169 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:53:49.169 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 70.68ms
+2024-01-28 20:53:49.170 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:53:49.170 +05:30 [INF] HTTP GET /api/product responded 200 in 71.5613 ms
+2024-01-28 20:53:49.170 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 74.4521ms
+2024-01-28 20:53:52.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - application/json null
+2024-01-28 20:53:52.285 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:53:52.285 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:53:52.285 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:53:52.296 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:53:52.297 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:53:52.298 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 12.5833ms
+2024-01-28 20:53:52.298 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:53:52.298 +05:30 [INF] HTTP GET /api/product responded 200 in 12.9942 ms
+2024-01-28 20:53:52.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 13.9433ms
+2024-01-28 20:54:05.665 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - null null
+2024-01-28 20:54:05.666 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:54:05.666 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:54:05.679 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:54:05.680 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:54:05.681 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 14.4436ms
+2024-01-28 20:54:05.681 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:54:05.681 +05:30 [INF] HTTP GET /api/product responded 200 in 14.9164 ms
+2024-01-28 20:54:05.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 16.4959ms
+2024-01-28 20:54:22.369 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:54:22.375 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 6.8964ms
+2024-01-28 20:54:22.413 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:54:22.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:54:22.415 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.295ms
+2024-01-28 20:54:22.467 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.5263ms
+2024-01-28 20:54:22.667 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:54:22.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.96ms
+2024-01-28 20:54:23.285 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/product - null null
+2024-01-28 20:54:23.287 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:23.287 +05:30 [INF] HTTP OPTIONS /api/product responded 204 in 0.1997 ms
+2024-01-28 20:54:23.287 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/product - 204 null null 1.8557ms
+2024-01-28 20:54:23.296 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - application/json null
+2024-01-28 20:54:23.297 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:23.297 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:54:23.297 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:54:23.313 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:54:23.314 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:54:23.315 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 17.0326ms
+2024-01-28 20:54:23.315 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:54:23.315 +05:30 [INF] HTTP GET /api/product responded 200 in 17.7090 ms
+2024-01-28 20:54:23.315 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 19.5982ms
+2024-01-28 20:54:37.086 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:54:37.090 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 4.4741ms
+2024-01-28 20:54:37.103 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:54:37.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:54:37.105 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.3518ms
+2024-01-28 20:54:37.126 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.9872ms
+2024-01-28 20:54:37.209 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:54:37.223 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.9197ms
+2024-01-28 20:54:37.711 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/product - null null
+2024-01-28 20:54:37.712 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:37.713 +05:30 [INF] HTTP OPTIONS /api/product responded 204 in 1.4344 ms
+2024-01-28 20:54:37.715 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/product - 204 null null 2.5485ms
+2024-01-28 20:54:37.723 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - application/json null
+2024-01-28 20:54:37.728 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:37.728 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:54:37.728 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:54:37.736 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:54:37.737 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:54:37.737 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 9.3043ms
+2024-01-28 20:54:37.737 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:54:37.737 +05:30 [INF] HTTP GET /api/product responded 200 in 9.7869 ms
+2024-01-28 20:54:37.738 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 14.779ms
+2024-01-28 20:54:43.031 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:54:43.038 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 7.7571ms
+2024-01-28 20:54:43.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:54:43.059 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:54:43.060 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.1355ms
+2024-01-28 20:54:43.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.5072ms
+2024-01-28 20:54:43.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:54:43.217 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.903ms
+2024-01-28 20:54:46.034 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-28 20:54:46.034 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:46.034 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1216 ms
+2024-01-28 20:54:46.034 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.9435ms
+2024-01-28 20:54:46.042 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-28 20:54:46.042 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:46.042 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-28 20:54:46.046 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-28 20:54:46.056 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-28 20:54:46.068 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:54:46.070 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 23.9684ms
+2024-01-28 20:54:46.070 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-28 20:54:46.070 +05:30 [INF] HTTP GET /api/Category responded 200 in 28.0961 ms
+2024-01-28 20:54:46.070 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 28.9426ms
+2024-01-28 20:54:47.998 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Brand - null null
+2024-01-28 20:54:47.999 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:47.999 +05:30 [INF] HTTP OPTIONS /api/Brand responded 204 in 0.1180 ms
+2024-01-28 20:54:47.999 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Brand - 204 null null 1.5413ms
+2024-01-28 20:54:48.002 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Brand - application/json null
+2024-01-28 20:54:48.003 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:48.003 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:54:48.007 +05:30 [INF] Route matched with {action = "Get", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetAsync() on controller Binder_Cart.Controllers.BrandController (Binder-Cart).
+2024-01-28 20:54:48.018 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId]
+FROM [Brands] AS [b]
+2024-01-28 20:54:48.028 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:54:48.035 +05:30 [INF] Executed action Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart) in 27.4874ms
+2024-01-28 20:54:48.035 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:54:48.035 +05:30 [INF] HTTP GET /api/Brand responded 200 in 32.2792 ms
+2024-01-28 20:54:48.035 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Brand - 200 7315 application/json; charset=utf-8 33.4424ms
+2024-01-28 20:54:50.009 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/product - null null
+2024-01-28 20:54:50.010 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:50.010 +05:30 [INF] HTTP OPTIONS /api/product responded 204 in 0.1249 ms
+2024-01-28 20:54:50.010 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/product - 204 null null 1.1081ms
+2024-01-28 20:54:50.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - application/json null
+2024-01-28 20:54:50.013 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:50.013 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:54:50.013 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:54:50.044 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:54:50.045 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:54:50.045 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 32.0922ms
+2024-01-28 20:54:50.045 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:54:50.045 +05:30 [INF] HTTP GET /api/product responded 200 in 32.4725 ms
+2024-01-28 20:54:50.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 33.4712ms
+2024-01-28 20:54:51.194 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:54:51.194 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:51.194 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.0756 ms
+2024-01-28 20:54:51.194 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 0.7138ms
+2024-01-28 20:54:51.196 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:54:51.197 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:54:51.197 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:54:51.197 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:54:51.203 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:54:51.212 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:54:51.212 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:54:51.213 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 15.3513ms
+2024-01-28 20:54:51.213 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:54:51.213 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 15.7169 ms
+2024-01-28 20:54:51.213 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 930 application/json; charset=utf-8 16.8233ms
+2024-01-28 20:56:19.612 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - null null
+2024-01-28 20:56:19.613 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:19.614 +05:30 [INF] HTTP OPTIONS /api/Authentication/Login responded 204 in 0.1995 ms
+2024-01-28 20:56:19.642 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - 204 null null 1.6261ms
+2024-01-28 20:56:19.645 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/Authentication/Login - application/json 43
+2024-01-28 20:56:19.648 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:19.648 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-28 20:56:19.656 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Binder_Cart.Dtos.LoginDto) on controller Binder_Cart.Controllers.AuthenticationController (Binder-Cart).
+2024-01-28 20:56:19.707 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:56:19.834 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-01-28 20:56:19.840 +05:30 [INF] Login successfully {"FirstName":"Admin","LastName":"A","Id":"ebe3c285-b089-4402-9344-83f503170735","UserName":"admin","NormalizedUserName":"ADMIN","Email":"admin@test.com","NormalizedEmail":"ADMIN@TEST.COM","EmailConfirmed":false,"PasswordHash":"AQAAAAIAAYagAAAAEEq/RnJwaRnS2QLhhTkdUSWV3Kipp57rIirBUR9fK9h/uAdSGT66uWI2smQ03I/3zA==","SecurityStamp":"NGZFOFHJEPC3VBDDWLVPNIM4ESTSB6Q5","ConcurrencyStamp":"cf1a3333-7a43-46bd-915f-aa78c95eb0a7","PhoneNumber":null,"PhoneNumberConfirmed":false,"TwoFactorEnabled":false,"LockoutEnd":null,"LockoutEnabled":true,"AccessFailedCount":0,"$type":"ApplicationUser"}
+2024-01-28 20:56:19.851 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-28 20:56:19.853 +05:30 [INF] Executed action Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart) in 196.9263ms
+2024-01-28 20:56:19.853 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-28 20:56:19.853 +05:30 [INF] HTTP POST /api/Authentication/Login responded 200 in 205.3242 ms
+2024-01-28 20:56:19.853 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/Authentication/Login - 200 423 application/json; charset=utf-8 208.8025ms
+2024-01-28 20:56:25.370 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:56:25.370 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:25.370 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.0814 ms
+2024-01-28 20:56:25.370 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 1.1662ms
+2024-01-28 20:56:25.373 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:56:25.374 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:25.374 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:56:25.374 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:56:25.379 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:56:25.386 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:56:25.386 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:56:25.387 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 12.3507ms
+2024-01-28 20:56:25.387 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:56:25.387 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 12.7424 ms
+2024-01-28 20:56:25.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 646 application/json; charset=utf-8 14.2216ms
+2024-01-28 20:56:52.228 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - null null
+2024-01-28 20:56:52.229 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:52.229 +05:30 [INF] HTTP OPTIONS /api/Authentication/Login responded 204 in 0.0884 ms
+2024-01-28 20:56:52.229 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - 204 null null 1.0412ms
+2024-01-28 20:56:52.232 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/Authentication/Login - application/json 43
+2024-01-28 20:56:52.233 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:52.233 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-28 20:56:52.233 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Binder_Cart.Dtos.LoginDto) on controller Binder_Cart.Controllers.AuthenticationController (Binder-Cart).
+2024-01-28 20:56:52.239 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:56:52.321 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-01-28 20:56:52.321 +05:30 [INF] Login successfully {"FirstName":"User9","LastName":"A","Id":"771bfa0b-7452-432d-9a69-52e8a4d16e16","UserName":"user9","NormalizedUserName":"USER9","Email":"user9@test.com","NormalizedEmail":"USER9@TEST.COM","EmailConfirmed":false,"PasswordHash":"AQAAAAIAAYagAAAAEHd3L9SO9r0HhFHwyk66IiSqoloaZF5l1WtQgMbUNLcMVkPQJGU9fvfsdQzQrL1qTA==","SecurityStamp":"W4UQNFOIO74ZMBIFTJRP3ZTVWPTZLN7T","ConcurrencyStamp":"97d72ee5-0353-415a-924c-ced6b0c78bdf","PhoneNumber":null,"PhoneNumberConfirmed":false,"TwoFactorEnabled":false,"LockoutEnd":null,"LockoutEnabled":true,"AccessFailedCount":0,"$type":"ApplicationUser"}
+2024-01-28 20:56:52.324 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-28 20:56:52.324 +05:30 [INF] Executed action Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart) in 90.7131ms
+2024-01-28 20:56:52.324 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-28 20:56:52.324 +05:30 [INF] HTTP POST /api/Authentication/Login responded 200 in 90.9708 ms
+2024-01-28 20:56:52.324 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/Authentication/Login - 200 421 application/json; charset=utf-8 92.3459ms
+2024-01-28 20:56:53.249 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:56:53.249 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:53.249 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.2457 ms
+2024-01-28 20:56:53.249 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 0.7323ms
+2024-01-28 20:56:53.252 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:56:53.254 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:53.254 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:56:53.254 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:56:53.259 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:56:53.266 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:56:53.266 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:56:53.267 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 12.5929ms
+2024-01-28 20:56:53.267 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:56:53.267 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 13.2385 ms
+2024-01-28 20:56:53.267 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 62 application/json; charset=utf-8 15.0289ms
+2024-01-28 20:56:58.621 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - null null
+2024-01-28 20:56:58.622 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:58.622 +05:30 [INF] HTTP OPTIONS /api/Authentication/Login responded 204 in 0.1349 ms
+2024-01-28 20:56:58.622 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - 204 null null 1.1759ms
+2024-01-28 20:56:58.623 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/Authentication/Login - application/json 43
+2024-01-28 20:56:58.624 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:56:58.624 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-28 20:56:58.624 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Binder_Cart.Dtos.LoginDto) on controller Binder_Cart.Controllers.AuthenticationController (Binder-Cart).
+2024-01-28 20:56:58.631 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:56:58.714 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-01-28 20:56:58.715 +05:30 [INF] Login successfully {"FirstName":"User7","LastName":"A","Id":"c0bc4d17-f79e-4a26-8510-f71680044125","UserName":"user7","NormalizedUserName":"USER7","Email":"user7@test.com","NormalizedEmail":"USER7@TEST.COM","EmailConfirmed":false,"PasswordHash":"AQAAAAIAAYagAAAAEOXh7lJRtbejtE5GaXMJD4udsW44vforsupMjsqei2tPCt8t6XD20LJW5E5n1EqeBA==","SecurityStamp":"GWVDVNUVC5CRGH76ODQJHIHV5WUSQYZN","ConcurrencyStamp":"ee458088-cf09-4a3c-a7b6-c13feb33ab69","PhoneNumber":null,"PhoneNumberConfirmed":false,"TwoFactorEnabled":false,"LockoutEnd":null,"LockoutEnabled":true,"AccessFailedCount":0,"$type":"ApplicationUser"}
+2024-01-28 20:56:58.715 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-28 20:56:58.715 +05:30 [INF] Executed action Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart) in 91.0972ms
+2024-01-28 20:56:58.715 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-28 20:56:58.715 +05:30 [INF] HTTP POST /api/Authentication/Login responded 200 in 91.3695 ms
+2024-01-28 20:56:58.715 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/Authentication/Login - 200 421 application/json; charset=utf-8 92.1028ms
+2024-01-28 20:57:00.343 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:57:00.343 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:00.343 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.0816 ms
+2024-01-28 20:57:00.343 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 0.7241ms
+2024-01-28 20:57:00.345 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:57:00.346 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:00.346 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:57:00.346 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:57:00.353 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:57:00.361 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:57:00.361 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:57:00.362 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 15.455ms
+2024-01-28 20:57:00.362 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:57:00.362 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 15.8248 ms
+2024-01-28 20:57:00.362 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 930 application/json; charset=utf-8 16.7957ms
+2024-01-28 20:57:05.323 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/product - null null
+2024-01-28 20:57:05.324 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:05.324 +05:30 [INF] HTTP OPTIONS /api/product responded 204 in 0.0522 ms
+2024-01-28 20:57:05.324 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/product - 204 null null 0.4171ms
+2024-01-28 20:57:05.325 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - application/json null
+2024-01-28 20:57:05.326 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:05.326 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:57:05.326 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:57:05.331 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:57:05.331 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:57:05.331 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 5.3278ms
+2024-01-28 20:57:05.331 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:57:05.331 +05:30 [INF] HTTP GET /api/product responded 200 in 5.5791 ms
+2024-01-28 20:57:05.331 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 6.5182ms
+2024-01-28 20:57:07.354 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Brand - null null
+2024-01-28 20:57:07.354 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:07.354 +05:30 [INF] HTTP OPTIONS /api/Brand responded 204 in 0.0520 ms
+2024-01-28 20:57:07.354 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Brand - 204 null null 0.6813ms
+2024-01-28 20:57:07.356 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Brand - application/json null
+2024-01-28 20:57:07.356 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:07.357 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:57:07.357 +05:30 [INF] Route matched with {action = "Get", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetAsync() on controller Binder_Cart.Controllers.BrandController (Binder-Cart).
+2024-01-28 20:57:07.361 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId]
+FROM [Brands] AS [b]
+2024-01-28 20:57:07.362 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:57:07.363 +05:30 [INF] Executed action Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart) in 6.363ms
+2024-01-28 20:57:07.363 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:57:07.363 +05:30 [INF] HTTP GET /api/Brand responded 200 in 6.6758 ms
+2024-01-28 20:57:07.363 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Brand - 200 7315 application/json; charset=utf-8 7.8061ms
+2024-01-28 20:57:08.832 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-28 20:57:08.833 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:08.833 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0998 ms
+2024-01-28 20:57:08.833 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.0356ms
+2024-01-28 20:57:08.837 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-28 20:57:08.838 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:08.838 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-28 20:57:08.838 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-28 20:57:08.844 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-28 20:57:08.845 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:57:08.845 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.8271ms
+2024-01-28 20:57:08.845 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-28 20:57:08.845 +05:30 [INF] HTTP GET /api/Category responded 200 in 7.0931 ms
+2024-01-28 20:57:08.845 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 8.3275ms
+2024-01-28 20:57:12.445 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Brand - null null
+2024-01-28 20:57:12.446 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:12.446 +05:30 [INF] HTTP OPTIONS /api/Brand responded 204 in 0.0998 ms
+2024-01-28 20:57:12.446 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Brand - 204 null null 1.0621ms
+2024-01-28 20:57:12.449 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Brand - application/json null
+2024-01-28 20:57:12.451 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:57:12.451 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:57:12.451 +05:30 [INF] Route matched with {action = "Get", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetAsync() on controller Binder_Cart.Controllers.BrandController (Binder-Cart).
+2024-01-28 20:57:12.456 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId]
+FROM [Brands] AS [b]
+2024-01-28 20:57:12.457 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:57:12.461 +05:30 [INF] Executed action Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart) in 9.9004ms
+2024-01-28 20:57:12.461 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:57:12.461 +05:30 [INF] HTTP GET /api/Brand responded 200 in 10.3957 ms
+2024-01-28 20:57:12.461 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Brand - 200 7315 application/json; charset=utf-8 12.2628ms
+2024-01-28 20:58:06.659 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 20:58:06.674 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 14.9114ms
+2024-01-28 20:58:06.702 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 20:58:06.704 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 20:58:06.704 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.8972ms
+2024-01-28 20:58:06.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.0226ms
+2024-01-28 20:58:06.837 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 20:58:06.848 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.1594ms
+2024-01-28 20:58:56.287 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-28 20:58:56.288 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:58:56.288 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.3303 ms
+2024-01-28 20:58:56.288 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.587ms
+2024-01-28 20:58:56.291 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-28 20:58:56.292 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:58:56.292 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-28 20:58:56.292 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-28 20:58:56.295 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-28 20:58:56.296 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:58:56.296 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 4.2294ms
+2024-01-28 20:58:56.296 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-28 20:58:56.296 +05:30 [INF] HTTP GET /api/Category responded 200 in 4.7329 ms
+2024-01-28 20:58:56.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 6.1799ms
+2024-01-28 20:58:58.232 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Brand - null null
+2024-01-28 20:58:58.233 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:58:58.233 +05:30 [INF] HTTP OPTIONS /api/Brand responded 204 in 0.2338 ms
+2024-01-28 20:58:58.233 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Brand - 204 null null 1.1746ms
+2024-01-28 20:58:58.236 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Brand - application/json null
+2024-01-28 20:58:58.236 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:58:58.236 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:58:58.236 +05:30 [INF] Route matched with {action = "Get", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetAsync() on controller Binder_Cart.Controllers.BrandController (Binder-Cart).
+2024-01-28 20:58:58.240 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId]
+FROM [Brands] AS [b]
+2024-01-28 20:58:58.242 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:58:58.243 +05:30 [INF] Executed action Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart) in 6.6841ms
+2024-01-28 20:58:58.243 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:58:58.243 +05:30 [INF] HTTP GET /api/Brand responded 200 in 7.2663 ms
+2024-01-28 20:58:58.244 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Brand - 200 7315 application/json; charset=utf-8 8.9512ms
+2024-01-28 20:59:00.758 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Brand - application/json null
+2024-01-28 20:59:00.758 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:59:00.759 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:59:00.759 +05:30 [INF] Route matched with {action = "Get", controller = "Brand"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetAsync() on controller Binder_Cart.Controllers.BrandController (Binder-Cart).
+2024-01-28 20:59:00.763 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId]
+FROM [Brands] AS [b]
+2024-01-28 20:59:00.765 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:59:00.768 +05:30 [INF] Executed action Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart) in 8.8052ms
+2024-01-28 20:59:00.768 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.BrandController.GetAsync (Binder-Cart)'
+2024-01-28 20:59:00.768 +05:30 [INF] HTTP GET /api/Brand responded 200 in 9.2736 ms
+2024-01-28 20:59:00.768 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Brand - 200 7315 application/json; charset=utf-8 10.2665ms
+2024-01-28 20:59:01.940 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/product - null null
+2024-01-28 20:59:01.941 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:59:01.941 +05:30 [INF] HTTP OPTIONS /api/product responded 204 in 0.0931 ms
+2024-01-28 20:59:01.941 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/product - 204 null null 1.4207ms
+2024-01-28 20:59:01.944 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - application/json null
+2024-01-28 20:59:01.944 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:59:01.945 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:59:01.945 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:59:01.951 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:59:01.951 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:59:01.951 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 6.5682ms
+2024-01-28 20:59:01.951 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:59:01.951 +05:30 [INF] HTTP GET /api/product responded 200 in 6.8929 ms
+2024-01-28 20:59:01.951 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 8.0058ms
+2024-01-28 20:59:02.727 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 20:59:02.727 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:59:02.727 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.1063 ms
+2024-01-28 20:59:02.727 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 0.9738ms
+2024-01-28 20:59:02.730 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 20:59:02.730 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:59:02.731 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:59:02.731 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 20:59:02.737 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 20:59:02.746 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 20:59:02.746 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:59:02.746 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 15.4851ms
+2024-01-28 20:59:02.746 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 20:59:02.746 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 15.8621 ms
+2024-01-28 20:59:02.746 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 930 application/json; charset=utf-8 16.8147ms
+2024-01-28 20:59:05.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/product - application/json null
+2024-01-28 20:59:05.463 +05:30 [INF] CORS policy execution successful.
+2024-01-28 20:59:05.463 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:59:05.463 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.ProductController (Binder-Cart).
+2024-01-28 20:59:05.474 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [p].[Id], [p].[BrandId], [p].[CategoryId], [p].[CreatedDate], [p].[CreatedId], [p].[ProductDescription], [p].[ProductImageLocalPath], [p].[ProductImageUrl], [p].[ProductName], [p].[ProductPrice], [p].[ProductStock], [p].[UpdatedDate], [p].[UpdatedId], [b].[Id], [b].[BrandImageLocalPath], [b].[BrandImageUrl], [b].[BrandName], [b].[CreatedDate], [b].[CreatedId], [b].[UpdatedDate], [b].[UpdatedId], [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Products] AS [p]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[CategoryId] = [c].[Id]
+2024-01-28 20:59:05.474 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 20:59:05.474 +05:30 [INF] Executed action Binder_Cart.Controllers.ProductController.Get (Binder-Cart) in 11.4581ms
+2024-01-28 20:59:05.474 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.ProductController.Get (Binder-Cart)'
+2024-01-28 20:59:05.474 +05:30 [INF] HTTP GET /api/product responded 200 in 11.8485 ms
+2024-01-28 20:59:05.475 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/product - 200 2011 application/json; charset=utf-8 13.2575ms

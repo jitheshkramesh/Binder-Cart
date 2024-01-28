@@ -1,0 +1,318 @@
+2024-01-28 19:15:56.490 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 19:15:56.933 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 19:15:56.934 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 19:15:56.937 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 19:15:56.938 +05:30 [INF] Hosting environment: Development
+2024-01-28 19:15:56.938 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 19:15:59.803 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 19:16:00.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 300.611ms
+2024-01-28 19:16:00.112 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 19:16:00.120 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.7545ms
+2024-01-28 19:16:00.131 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 19:16:00.194 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.6041ms
+2024-01-28 19:16:00.257 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 19:16:00.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 232.8317ms
+2024-01-28 19:17:08.137 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/c0bc4d17-f79e-4a26-8510-f71680044125 - null null
+2024-01-28 19:17:08.159 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:17:08.175 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 19:17:08.861 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 19:17:09.445 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c1].[UserId] = @__userId_0
+2024-01-28 19:17:09.476 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 1297.74ms
+2024-01-28 19:17:09.476 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:17:09.478 +05:30 [INF] HTTP GET /api/cart/GetCart/c0bc4d17-f79e-4a26-8510-f71680044125 responded 200 in 1321.3905 ms
+2024-01-28 19:17:09.484 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/c0bc4d17-f79e-4a26-8510-f71680044125 - 200 111 application/json; charset=utf-8 1347.2769ms
+2024-01-28 19:17:24.933 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 19:17:24.935 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:17:24.936 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 19:17:24.959 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 19:17:24.964 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c1].[UserId] = @__userId_0
+2024-01-28 19:17:24.965 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 29.1821ms
+2024-01-28 19:17:24.965 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:17:24.965 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 30.1108 ms
+2024-01-28 19:17:24.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 161 application/json; charset=utf-8 32.1851ms
+2024-01-28 19:25:16.375 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 19:25:16.565 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 19:25:16.566 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 19:25:16.567 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 19:25:16.567 +05:30 [INF] Hosting environment: Development
+2024-01-28 19:25:16.567 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 19:25:20.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 19:25:20.865 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 446.9895ms
+2024-01-28 19:25:20.908 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 19:25:20.908 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 19:25:20.923 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 14.6817ms
+2024-01-28 19:25:20.994 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.8056ms
+2024-01-28 19:25:21.059 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 19:25:21.307 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 248.5783ms
+2024-01-28 19:25:57.552 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/c0bc4d17-f79e-4a26-8510-f71680044125 - null null
+2024-01-28 19:25:57.570 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:25:57.587 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 19:25:58.291 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 19:25:58.871 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c0].[CartHeaderId], [c].[ProductId], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c2].[CategoryName], [c2].[CategoryImageUrl], [b].[BrandName], [b].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [Categories] AS [c4] ON [b].[Id] = [c4].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 19:25:58.907 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 1317.2875ms
+2024-01-28 19:25:58.907 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:25:58.908 +05:30 [INF] HTTP GET /api/cart/GetCart/c0bc4d17-f79e-4a26-8510-f71680044125 responded 200 in 1339.5642 ms
+2024-01-28 19:25:58.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/c0bc4d17-f79e-4a26-8510-f71680044125 - 200 335 application/json; charset=utf-8 1364.3471ms
+2024-01-28 19:26:15.135 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 19:26:15.137 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:26:15.137 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 19:26:15.162 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 19:26:15.167 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c0].[CartHeaderId], [c].[ProductId], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c2].[CategoryName], [c2].[CategoryImageUrl], [b].[BrandName], [b].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [Categories] AS [c4] ON [b].[Id] = [c4].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 19:26:15.168 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 30.3459ms
+2024-01-28 19:26:15.168 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:26:15.168 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 31.2836 ms
+2024-01-28 19:26:15.168 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 626 application/json; charset=utf-8 32.8068ms
+2024-01-28 19:27:10.276 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 19:27:10.283 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:27:10.284 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 19:27:22.616 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c0].[CartHeaderId], [c].[ProductId], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c2].[CategoryName], [c2].[CategoryImageUrl], [b].[BrandName], [b].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [Categories] AS [c4] ON [b].[Id] = [c4].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 19:31:45.527 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 19:31:45.797 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 19:31:45.797 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 19:31:45.799 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 19:31:45.799 +05:30 [INF] Hosting environment: Development
+2024-01-28 19:31:45.799 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 19:31:49.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 19:31:49.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 245.4796ms
+2024-01-28 19:31:49.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 19:31:49.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.6777ms
+2024-01-28 19:31:49.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 19:31:49.363 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.5269ms
+2024-01-28 19:31:49.407 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 19:31:49.571 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 164.5367ms
+2024-01-28 19:32:02.957 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 19:32:02.965 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:32:02.982 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 19:32:23.445 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 19:32:23.763 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 19:32:23.818 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2024-01-28 19:32:23.837 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 20851.7884ms
+2024-01-28 19:32:23.837 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:32:23.839 +05:30 [ERR] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 500 in 20875.5332 ms
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-01-28 19:32:23.843 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method24(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-28 19:32:23.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 500 259 application/problem+json; charset=utf-8 20927.3581ms
+2024-01-28 19:34:03.440 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 19:34:03.675 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 19:34:03.675 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 19:34:03.676 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 19:34:03.676 +05:30 [INF] Hosting environment: Development
+2024-01-28 19:34:03.676 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 19:34:04.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 19:34:04.772 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 409.1944ms
+2024-01-28 19:34:04.784 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 19:34:04.794 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.9322ms
+2024-01-28 19:34:04.813 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 19:34:04.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.4524ms
+2024-01-28 19:34:05.014 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 19:34:05.338 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 324.8198ms
+2024-01-28 19:34:16.626 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 19:34:16.636 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:34:16.652 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 19:34:17.331 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 19:34:17.929 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c0].[CartHeaderId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+LEFT JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 19:34:17.981 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'Binder_Cart.Data.ApplicationDbContext'.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method25(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method25(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2024-01-28 19:34:18.000 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 1344.8158ms
+2024-01-28 19:34:18.001 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:34:18.003 +05:30 [ERR] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 500 in 1370.3079 ms
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method25(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-01-28 19:34:18.007 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at lambda_method25(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-28 19:34:18.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 500 259 application/problem+json; charset=utf-8 1419.258ms
+2024-01-28 19:34:26.731 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 19:34:26.733 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:34:26.733 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 19:59:43.622 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 19:59:43.880 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 19:59:43.880 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 19:59:43.881 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 19:59:43.882 +05:30 [INF] Hosting environment: Development
+2024-01-28 19:59:43.882 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 19:59:47.177 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 19:59:47.532 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 358.4298ms
+2024-01-28 19:59:47.565 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 19:59:47.565 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 19:59:47.574 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.1121ms
+2024-01-28 19:59:47.642 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.5436ms
+2024-01-28 19:59:47.704 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 19:59:47.909 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 205.3486ms
+2024-01-28 19:59:54.477 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - null null
+2024-01-28 19:59:54.490 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:59:54.518 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart(System.String) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 19:59:55.431 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 19:59:55.509 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 986.9962ms
+2024-01-28 19:59:55.509 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 19:59:55.510 +05:30 [INF] HTTP GET /api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 responded 200 in 1025.1405 ms
+2024-01-28 19:59:55.514 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart/ebe3c285-b089-4402-9344-83f503170735 - 200 537 application/json; charset=utf-8 1037.8011ms

@@ -5,6 +5,7 @@ using Binder_Cart.Dtos;
 using Binder_Cart.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Binder_Cart.Controllers
 {
@@ -27,12 +28,13 @@ namespace Binder_Cart.Controllers
         }
 
         [HttpGet]
-        public ResponseDto Get()
+        public async Task<ResponseDto> Get()
         {
             try
             {
-                IEnumerable<Product> objList = _db.Products.ToList();
-                _response.Result = _mapper.Map<IEnumerable<ProductDto>>(objList);
+                //IEnumerable<Product> objList = await _db.Products.Include(brands => brands.Brand).Include(cat => cat.Category).ToListAsync(); 
+                //_response.Result = _mapper.Map<IEnumerable<ProductDto>>(objList);
+                _response.Result = await _db.Products.Include(brands => brands.Brand).Include(cat => cat.Category).ToListAsync();
             }
             catch (Exception ex)
             {
@@ -157,12 +159,11 @@ namespace Binder_Cart.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
-        [Authorize(Roles = UserRoles.Admin)]
-        public ResponseDto Delete(int id)
+        public async Task<ResponseDto> Delete(int id)
         {
             try
             {
-                Product obj = _db.Products.First(u => u.Id == id);
+                Product obj = await _db.Products.FirstAsync(u => u.Id == id);
                 if (!string.IsNullOrEmpty(obj.ProductImageLocalPath))
                 {
                     var oldFilePathDirectory = Path.Combine(Directory.GetCurrentDirectory(), obj.ProductImageLocalPath);
@@ -173,7 +174,7 @@ namespace Binder_Cart.Controllers
                     }
                 }
                 _db.Products.Remove(obj);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             catch (Exception ex)
             {
