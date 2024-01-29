@@ -128,36 +128,6 @@ namespace Binder_Cart.Controllers
                 category.UpdatedId = userId;
                 _db.Categories.Add(category);
                 await _db.SaveChangesAsync();
-
-                //if (CategoryDto.CategoryImageUrl != null)
-                //{
-
-                //    string fileName = category.Id + Path.GetExtension(CategoryDto.CategoryImage.FileName);
-                //    string filePath = @"wwwroot\CategoryImages\" + fileName;
-
-                //    //I have added the if condition to remove the any image with same name if that exist in the folder by any change
-                //    var directoryLocation = Path.Combine(Directory.GetCurrentDirectory(), filePath);
-                //    FileInfo file = new FileInfo(directoryLocation);
-                //    if (file.Exists)
-                //    {
-                //        file.Delete();
-                //    }
-
-                //    var filePathDirectory = Path.Combine(Directory.GetCurrentDirectory(), filePath);
-                //    using (var fileStream = new FileStream(filePathDirectory, FileMode.Create))
-                //    {
-                //        CategoryDto.CategoryImage.CopyTo(fileStream);
-                //    }
-                //    var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.Value}{HttpContext.Request.PathBase.Value}";
-                //    category.CategoryImageUrl = baseUrl + "/CategoryImages/" + fileName;
-                //    category.CategoryImageLocalPath = filePath;
-                //}
-                //else
-                //{
-                //    category.CategoryImageUrl = "https://placehold.co/600x400";
-                //}
-                //_db.Categories.Update(category);
-                //_db.SaveChanges();
                 _response.Result = _mapper.Map<CategoryDto>(category);
             }
             catch (Exception ex)

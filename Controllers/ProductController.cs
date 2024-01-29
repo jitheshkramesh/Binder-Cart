@@ -86,36 +86,6 @@ namespace Binder_Cart.Controllers
                 _db.Products.Add(product);
                 await _db.SaveChangesAsync();
                
-
-                //if (ProductDto.ProductImage != null)
-                //{
-
-                //    string fileName = product.Id + Path.GetExtension(ProductDto.ProductImage.FileName);
-                //    string filePath = @"wwwroot\ProductImages\" + fileName;
-
-                //    //I have added the if condition to remove the any image with same name if that exist in the folder by any change
-                //    var directoryLocation = Path.Combine(Directory.GetCurrentDirectory(), filePath);
-                //    FileInfo file = new FileInfo(directoryLocation);
-                //    if (file.Exists)
-                //    {
-                //        file.Delete();
-                //    }
-
-                //    var filePathDirectory = Path.Combine(Directory.GetCurrentDirectory(), filePath);
-                //    using (var fileStream = new FileStream(filePathDirectory, FileMode.Create))
-                //    {
-                //        ProductDto.ProductImage.CopyTo(fileStream);
-                //    }
-                //    var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.Value}{HttpContext.Request.PathBase.Value}";
-                //    product.ProductImageUrl = baseUrl + "/ProductImages/" + fileName;
-                //    product.ProductImageLocalPath = filePath;
-                //}
-                //else
-                //{
-                //    product.ProductImageUrl = "https://placehold.co/600x400";
-                //}
-                //_db.Products.Update(product);
-                //_db.SaveChanges();
                 _response.Result = _mapper.Map<ProductDto>(product);
             }
             catch (Exception ex)
