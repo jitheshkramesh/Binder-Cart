@@ -39,26 +39,31 @@ namespace Binder_Cart.Controllers
                 {
                 var user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
                 string userId = user.Id.ToString(); 
-             var query =(from c in _db.CartDetails
-                                    join h in _db.CartHeaders on c.CartHeaderId equals h.CartHeaderId
-                         join p in _db.Products on c.ProductId equals p.Id
-                         join ba in _db.Brands on p.Brand.Id equals ba.Id
-                         join ca in _db.Categories on p.Category.Id equals ca.Id
-                         where (h.UserId == userId)
-                                    select new
-                                    {
-                                        CartDetailId=c.CartDetailsId,
-                                        CartHeaderId=h.CartHeaderId,
-                                        ProductId=c.ProductId,
-                                        Count=c.Count,
-                                        ProductName= p.ProductName,
-                                        ProductImageUrl=p.ProductImageUrl,
-                                        ProductPrice= p.ProductPrice,
-                                        CategoryName= ca.CategoryName,
-                                        CategoryImageUrl= ca.CategoryImageUrl,
-                                        BrandName= ba.BrandName,
-                                        BrandImageUrl= ba.BrandImageUrl
-                                    });
+
+                var query = from cartDetail in _db.CartDetails
+                            join cartHeader in _db.CartHeaders on cartDetail.CartHeaderId equals cartHeader.CartHeaderId into cartHeaderGroup
+                            from cartHeader in cartHeaderGroup.DefaultIfEmpty()
+                            join product in _db.Products on cartDetail.ProductId equals product.Id into productHeaderGroup
+                            from product in productHeaderGroup.DefaultIfEmpty()
+                            join brand in _db.Brands on product.BrandId equals brand.Id into brandGroup
+                            from brand in brandGroup.DefaultIfEmpty()
+                            join category in _db.Categories on product.CategoryId equals category.Id into categoryGroup
+                            from category in categoryGroup.DefaultIfEmpty()
+                            where cartHeader.UserId == userId
+                            select new
+                            {
+                                CartDetailId = cartDetail.CartDetailsId,
+                                CartHeaderId = cartHeader.CartHeaderId,
+                                cartDetail.ProductId,
+                                cartDetail.Count,
+                                ProductName = product.ProductName,
+                                product.ProductImageUrl,
+                                product.ProductPrice,
+                                CategoryName = category.CategoryName,
+                                CategoryImageUrl = category.CategoryImageUrl,
+                                BrandName = brand.BrandName,
+                                BrandImageUrl = brand.BrandImageUrl
+                            };
                 _response.Result =await query.ToListAsync();
                 _response.IsSuccess = true;
                 }
