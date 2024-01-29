@@ -17,6 +17,7 @@ namespace Binder_Cart.Data
         {
             base.OnModelCreating(builder);
         }
+         
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }

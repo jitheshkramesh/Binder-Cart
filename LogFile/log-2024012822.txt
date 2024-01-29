@@ -1,0 +1,1275 @@
+2024-01-28 22:12:25.244 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:12:25.594 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:12:25.594 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:12:25.596 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:12:25.597 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:12:25.597 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:12:29.207 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:12:29.521 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 318.0326ms
+2024-01-28 22:12:29.532 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:12:29.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.7667ms
+2024-01-28 22:12:29.550 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:12:29.602 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.046ms
+2024-01-28 22:12:29.663 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:12:29.871 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 207.8611ms
+2024-01-28 22:13:46.373 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:13:46.627 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:13:46.627 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:13:46.629 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:13:46.629 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:13:46.629 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:13:47.191 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:13:47.524 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 342.3212ms
+2024-01-28 22:13:47.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:13:47.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:13:47.575 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 17.8958ms
+2024-01-28 22:13:47.627 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.3983ms
+2024-01-28 22:13:47.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:13:47.874 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.0567ms
+2024-01-28 22:14:08.036 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:14:08.056 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:14:08.061 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:14:08.102 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:14:09.134 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:14:09.163 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 1057.3989ms
+2024-01-28 22:14:09.163 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:14:09.164 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 1118.9183 ms
+2024-01-28 22:14:09.170 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 107 application/json; charset=utf-8 1133.9937ms
+2024-01-28 22:14:28.999 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:14:29.002 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:14:29.002 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:14:29.002 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:14:29.054 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:14:29.054 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 51.5788ms
+2024-01-28 22:14:29.054 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:14:29.054 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 53.1584 ms
+2024-01-28 22:14:29.054 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 107 application/json; charset=utf-8 56.0754ms
+2024-01-28 22:14:45.818 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:14:45.819 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:14:45.819 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:14:45.819 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:14:45.910 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:14:45.911 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 91.566ms
+2024-01-28 22:14:45.911 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:14:45.911 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 92.2551 ms
+2024-01-28 22:14:45.911 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 107 application/json; charset=utf-8 93.3039ms
+2024-01-28 22:15:11.975 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:15:11.976 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:15:11.976 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:15:11.976 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:15:24.624 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:15:24.624 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 12647.7841ms
+2024-01-28 22:15:24.624 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:15:24.624 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 12648.2740 ms
+2024-01-28 22:15:24.624 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 107 application/json; charset=utf-8 12649.1183ms
+2024-01-28 22:16:16.393 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:16:16.393 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:16:16.396 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:16:16.397 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:16:53.829 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:16:54.088 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:16:54.088 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:16:54.090 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:16:54.090 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:16:54.090 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:16:57.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:16:57.546 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 263.7155ms
+2024-01-28 22:16:57.555 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:16:57.560 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.9872ms
+2024-01-28 22:16:57.570 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:16:57.615 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.8616ms
+2024-01-28 22:16:57.661 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:16:57.792 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.5549ms
+2024-01-28 22:17:26.137 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:17:26.153 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:17:26.155 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:17:26.172 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:17:37.903 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:17:37.929 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 11752.0127ms
+2024-01-28 22:17:37.929 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:17:37.930 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 11780.2906 ms
+2024-01-28 22:17:37.935 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 107 application/json; charset=utf-8 11798.378ms
+2024-01-28 22:18:25.873 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:18:26.139 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:18:26.139 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:18:26.141 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:18:26.141 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:18:26.141 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:18:29.555 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:18:29.898 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:18:29.900 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 346.769ms
+2024-01-28 22:18:29.910 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 11.7261ms
+2024-01-28 22:18:29.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:18:29.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.4198ms
+2024-01-28 22:18:30.064 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:18:30.326 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 262.607ms
+2024-01-28 22:18:51.109 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:18:51.120 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:18:51.123 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:18:51.140 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:18:58.983 +05:30 [INF] Executed DbCommand (109ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:19:04.447 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:19:08.929 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CartDetails] SET [Count] = @p0, [ProductId] = @p1
+OUTPUT 1
+WHERE [CartDetailsId] = @p2;
+2024-01-28 22:19:12.161 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:19:12.201 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 21058.7445ms
+2024-01-28 22:19:12.201 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:19:12.204 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 21085.9146 ms
+2024-01-28 22:19:12.211 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 142 application/json; charset=utf-8 21102.8749ms
+2024-01-28 22:20:31.874 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:20:31.883 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:20:31.883 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:20:31.884 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:20:34.203 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:20:35.805 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:20:38.233 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:20:38.408 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:f4380865-50f2-4c6c-a1e9-158245f68e1d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:f4380865-50f2-4c6c-a1e9-158245f68e1d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:21:30.051 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:21:30.388 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:21:30.388 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:21:30.391 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:21:30.392 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:21:30.392 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:21:33.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:21:34.105 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 364.9735ms
+2024-01-28 22:21:34.114 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:21:34.122 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.9027ms
+2024-01-28 22:21:34.137 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:21:34.198 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.4388ms
+2024-01-28 22:21:34.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:21:34.515 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 245.0003ms
+2024-01-28 22:21:47.082 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:21:47.089 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:21:47.095 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:21:47.111 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:21:53.006 +05:30 [INF] Executed DbCommand (57ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:21:55.371 +05:30 [INF] Executed DbCommand (62ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:23:00.765 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:23:01.036 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:23:01.036 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:23:01.038 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:23:01.039 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:23:01.039 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:23:04.169 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:23:04.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 296.8185ms
+2024-01-28 22:23:04.476 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:23:04.482 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.371ms
+2024-01-28 22:23:04.494 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:23:04.550 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.7456ms
+2024-01-28 22:23:04.618 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:23:04.809 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 190.9218ms
+2024-01-28 22:23:17.810 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:23:17.817 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:23:17.819 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:23:17.840 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:23:22.297 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:23:27.838 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:23:33.887 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:23:33.940 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:78604c76-d706-4779-9352-6983f5b8d557
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:78604c76-d706-4779-9352-6983f5b8d557
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:24:09.564 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:24:09.591 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 51747.4299ms
+2024-01-28 22:24:09.591 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:24:09.593 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 51776.9053 ms
+2024-01-28 22:24:09.601 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 150 application/json; charset=utf-8 51791.7856ms
+2024-01-28 22:24:13.274 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:24:13.277 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:24:13.277 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:24:13.277 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:24:15.870 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:24:20.891 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:24:49.385 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:24:49.388 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:78604c76-d706-4779-9352-6983f5b8d557
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:78604c76-d706-4779-9352-6983f5b8d557
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:24:49.420 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:24:49.421 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 36143.724ms
+2024-01-28 22:24:49.421 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:24:49.421 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 36145.0707 ms
+2024-01-28 22:24:49.421 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 150 application/json; charset=utf-8 36147.1464ms
+2024-01-28 22:25:25.555 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:25:25.878 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:25:25.879 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:25:25.880 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:25:25.881 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:25:25.881 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:25:29.200 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:25:29.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 306.5306ms
+2024-01-28 22:25:29.522 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:25:29.530 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.4573ms
+2024-01-28 22:25:29.541 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:25:29.615 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.5029ms
+2024-01-28 22:25:29.692 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:25:29.896 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 205.632ms
+2024-01-28 22:25:32.765 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-28 22:25:32.775 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:25:32.777 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 3.5630 ms
+2024-01-28 22:25:32.777 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 12.5423ms
+2024-01-28 22:25:32.781 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-28 22:25:32.862 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:25:32.866 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 22:25:32.877 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:25:34.135 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-28 22:25:34.328 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c1].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c3].[CategoryName], [c3].[CategoryImageUrl], [b0].[BrandName], [b0].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+INNER JOIN [CartHeaders] AS [c1] ON [c0].[CartHeaderId] = [c1].[CartHeaderId]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+INNER JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+INNER JOIN [Brands] AS [b0] ON [b].[Id] = [b0].[Id]
+INNER JOIN [Categories] AS [c2] ON [p].[CategoryId] = [c2].[Id]
+INNER JOIN [Categories] AS [c3] ON [c2].[Id] = [c3].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-28 22:25:34.336 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:25:34.432 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 1551.164ms
+2024-01-28 22:25:34.432 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-28 22:25:34.433 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 1570.8050 ms
+2024-01-28 22:25:34.440 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 930 application/json; charset=utf-8 1659.666ms
+2024-01-28 22:25:48.801 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:25:48.802 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:25:48.802 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:25:48.811 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:25:51.472 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:25:54.430 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:25:59.060 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:25:59.109 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:ea265f12-ce65-40f3-84b4-8608a1ed67c6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:ea265f12-ce65-40f3-84b4-8608a1ed67c6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:26:35.342 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+2024-01-28 22:27:44.785 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:27:45.064 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:27:45.064 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:27:45.066 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:27:45.067 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:27:45.067 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:27:45.531 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:27:45.954 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 429.4774ms
+2024-01-28 22:27:46.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:27:46.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:27:46.024 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 16.8747ms
+2024-01-28 22:27:46.078 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.8684ms
+2024-01-28 22:27:46.161 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:27:46.396 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 235.9224ms
+2024-01-28 22:27:57.093 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:27:57.104 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:27:57.110 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:27:57.137 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:28:00.987 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:28:02.597 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:28:09.829 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:28:09.860 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:80d58668-3284-40e6-aec2-3c0c2b427625
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:80d58668-3284-40e6-aec2-3c0c2b427625
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:36:13.983 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:36:14.276 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:36:14.276 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:36:14.279 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:36:14.280 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:36:14.280 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:36:14.836 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:36:15.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:36:15.399 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 571.0503ms
+2024-01-28 22:36:15.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 15.946ms
+2024-01-28 22:36:15.429 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:36:15.535 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.0423ms
+2024-01-28 22:36:15.657 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:36:16.000 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 344.2393ms
+2024-01-28 22:36:35.915 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:36:35.930 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:36:35.934 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:36:35.959 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:36:41.730 +05:30 [INF] Executed DbCommand (92ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:36:53.037 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:37:02.346 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:37:02.413 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8b7ab304-408c-4751-bce3-95ddc3cfe2eb
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8b7ab304-408c-4751-bce3-95ddc3cfe2eb
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:40:23.530 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:40:24.014 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:40:24.014 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:40:24.017 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:40:24.017 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:40:24.017 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:40:24.614 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:40:25.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 426.2919ms
+2024-01-28 22:40:25.036 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:40:25.046 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.4297ms
+2024-01-28 22:40:25.060 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:40:25.117 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.0755ms
+2024-01-28 22:40:25.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:40:25.459 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 265.8841ms
+2024-01-28 22:41:14.318 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:41:14.327 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:41:14.330 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:41:14.350 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:41:22.094 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:41:31.855 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:41:57.717 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+2024-01-28 22:43:36.122 +05:30 [ERR] Failed executing DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:43:36.163 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.InvalidOperationException: There is already an open DataReader associated with this Connection which must be closed first.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:44:28.727 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:44:29.022 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:44:29.022 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:44:29.023 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:44:29.024 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:44:29.024 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:44:32.347 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:44:32.614 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 271.9055ms
+2024-01-28 22:44:32.639 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:44:32.639 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:44:32.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 13.5676ms
+2024-01-28 22:44:32.690 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.3707ms
+2024-01-28 22:44:32.724 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:44:32.877 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.9552ms
+2024-01-28 22:44:44.729 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:44:44.739 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:44:44.744 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:44:44.765 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:44:52.314 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:44:55.273 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:45:48.003 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:45:48.049 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:795dba4d-d93d-4b7c-b0ae-a098521c3d5d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:795dba4d-d93d-4b7c-b0ae-a098521c3d5d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:46:07.316 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:46:07.353 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 82585.9735ms
+2024-01-28 22:46:07.354 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:46:07.355 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 82620.1559 ms
+2024-01-28 22:46:07.363 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 150 application/json; charset=utf-8 82634.1415ms
+2024-01-28 22:48:39.474 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:48:39.779 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:48:39.780 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:48:39.781 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:48:39.782 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:48:39.782 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:48:40.227 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:48:40.658 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 436.6739ms
+2024-01-28 22:48:40.669 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:48:40.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.639ms
+2024-01-28 22:48:40.699 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:48:40.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.4596ms
+2024-01-28 22:48:40.863 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:48:41.104 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 240.9227ms
+2024-01-28 22:48:53.128 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:48:53.135 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:48:53.142 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:48:53.160 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:48:59.290 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:49:02.789 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:49:09.518 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:49:09.563 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e7901c5b-07fb-45a1-87e9-99cdbf8a3677
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e7901c5b-07fb-45a1-87e9-99cdbf8a3677
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:49:24.302 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:49:24.328 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 31165.1654ms
+2024-01-28 22:49:24.329 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:49:24.331 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 31196.9998 ms
+2024-01-28 22:49:24.339 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 150 application/json; charset=utf-8 31211.1292ms
+2024-01-28 22:49:30.670 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:49:30.672 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:49:30.673 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:49:30.673 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:49:33.374 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:49:34.617 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:53:10.702 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:53:10.983 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:53:10.983 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:53:10.985 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:53:10.985 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:53:10.985 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:53:14.722 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:53:14.991 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 275.5032ms
+2024-01-28 22:53:15.023 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:53:15.023 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:53:15.038 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 15.0142ms
+2024-01-28 22:53:15.077 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.622ms
+2024-01-28 22:53:15.112 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:53:15.249 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 137.3267ms
+2024-01-28 22:53:25.225 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:53:25.234 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:53:25.240 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:53:25.257 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:53:29.999 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:53:31.578 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:53:32.780 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:53:45.147 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:53:45.199 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:93d0cd96-7720-4c30-85e6-1bc2e6a3fb8d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:93d0cd96-7720-4c30-85e6-1bc2e6a3fb8d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:56:49.824 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:56:50.101 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:56:50.101 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:56:50.103 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:56:50.103 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:56:50.103 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:56:50.696 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:56:51.150 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 460.7516ms
+2024-01-28 22:56:51.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:56:51.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:56:51.199 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.4071ms
+2024-01-28 22:56:51.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.9971ms
+2024-01-28 22:56:51.324 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:56:51.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 557.7167ms
+2024-01-28 22:57:06.264 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:57:06.272 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:57:06.275 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:57:06.301 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:57:11.628 +05:30 [INF] Executed DbCommand (68ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:57:13.932 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:57:14.210 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:57:17.357 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:57:17.417 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8d7dd4df-4617-4531-9bea-f44a481c435b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8d7dd4df-4617-4531-9bea-f44a481c435b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:57:39.256 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-28 22:57:39.492 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-28 22:57:39.492 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-28 22:57:39.494 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-28 22:57:39.494 +05:30 [INF] Hosting environment: Development
+2024-01-28 22:57:39.495 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-28 22:57:40.173 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-28 22:57:40.772 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 610.3739ms
+2024-01-28 22:57:40.837 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-28 22:57:40.837 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-28 22:57:40.860 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 24.0658ms
+2024-01-28 22:57:40.926 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.1908ms
+2024-01-28 22:57:41.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-28 22:57:41.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 258.1002ms
+2024-01-28 22:57:51.832 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:57:51.841 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:57:51.845 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:57:51.863 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:57:56.860 +05:30 [INF] Executed DbCommand (60ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:57:59.722 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:58:00.377 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
+2024-01-28 22:58:06.786 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartDetails] ([CartHeaderId], [Count], [ProductId])
+OUTPUT INSERTED.[CartDetailsId]
+VALUES (@p0, @p1, @p2);
+2024-01-28 22:58:06.845 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'Binder_Cart.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:dbc93f09-4460-4858-840f-574a08c4538b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CartDetails_CartHeaders_CartHeaderId". The conflict occurred in database "BinderDb", table "dbo.CartHeaders", column 'CartHeaderId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:dbc93f09-4460-4858-840f-574a08c4538b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-28 22:58:37.132 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-28 22:58:37.172 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart) in 45299.3091ms
+2024-01-28 22:58:37.172 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:58:37.175 +05:30 [INF] HTTP POST /api/cart/AddToCart responded 200 in 45334.7576 ms
+2024-01-28 22:58:37.182 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/cart/AddToCart - 200 150 application/json; charset=utf-8 45349.7968ms
+2024-01-28 22:58:40.922 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/cart/AddToCart - application/json-patch+json 37
+2024-01-28 22:58:40.926 +05:30 [INF] CORS policy execution successful.
+2024-01-28 22:58:40.926 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.AddToCart (Binder-Cart)'
+2024-01-28 22:58:40.927 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] AddToCart(Binder_Cart.Dtos.CartUpdate) on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-28 22:58:43.926 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:58:45.211 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartHeaderId], [c].[UserId]
+FROM [CartHeaders] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-01-28 22:58:46.170 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__productId_0='?' (DbType = Int32), @__cartHeaderFromDb_CartHeaderId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[CartDetailsId], [c].[CartHeaderId], [c].[Count], [c].[ProductId]
+FROM [CartDetails] AS [c]
+INNER JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+WHERE [c].[ProductId] = @__productId_0 AND [c0].[CartHeaderId] = @__cartHeaderFromDb_CartHeaderId_1
