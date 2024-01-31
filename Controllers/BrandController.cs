@@ -44,7 +44,7 @@ namespace Binder_Cart.Controllers
             try
             {
 
-                IEnumerable<Brand> objList =await _db.Brands.ToListAsync();
+                IEnumerable<Brand> objList =await _db.Brands.OrderByDescending(o=>o.Id).ToListAsync();
                 _response.Result = _mapper.Map<IEnumerable<BrandDto>>(objList);
             }
             catch (Exception ex)
@@ -57,11 +57,11 @@ namespace Binder_Cart.Controllers
 
         [HttpGet]
         [Route("{id:int}")]
-        public ResponseDto Get(int id)
+        public async Task<ResponseDto> Get(int id)
         {
             try
             {
-                Brand obj = _db.Brands.First(u => u.Id == id);
+                Brand obj = await _db.Brands.FirstAsync(u => u.Id == id);
                 _response.Result = _mapper.Map<BrandDto>(obj);
             }
             catch (Exception ex)
@@ -128,17 +128,30 @@ namespace Binder_Cart.Controllers
                 var user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
                 string userId = user.Id.ToString();
 
-                Brand brand = _mapper.Map<Brand>(brandDto);
-               // brand.BrandImageLocalPath = GetActualpath(brandDto.BrandImageUrl);
-                brand.CreatedDate = DateTime.Now;
-                brand.UpdatedDate = DateTime.Now;
-                brand.CreatedId= userId;
-                brand.UpdatedId= userId;
-                _db.Brands.Add(brand);
-                await _db.SaveChangesAsync();
+                var brandFromDb = await _db.Brands.AsNoTracking().FirstOrDefaultAsync(
+                        u => u.Id == brandDto.Id);
+                if (brandFromDb == null)
+                {
 
-               
-                _response.Result = _mapper.Map<BrandDto>(brand);
+                    Brand brand = _mapper.Map<Brand>(brandDto);
+                    // brand.BrandImageLocalPath = GetActualpath(brandDto.BrandImageUrl);
+                    brand.CreatedDate = DateTime.Now;
+                    brand.UpdatedDate = DateTime.Now;
+                    brand.CreatedId = userId;
+                    brand.UpdatedId = userId;
+                    _db.Brands.Add(brand);
+                    await _db.SaveChangesAsync();
+                }
+                else
+                {
+                    brandFromDb.BrandName = brandDto.BrandName;
+                    brandFromDb.BrandImageUrl = brandDto.BrandImageUrl;
+                    _db.Brands.Update(brandFromDb);
+                    await _db.SaveChangesAsync();
+                }
+
+
+                _response.Result = _mapper.Map<BrandDto>(brandFromDb);
             }
             catch (Exception ex)
             {

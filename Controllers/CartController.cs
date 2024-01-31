@@ -41,14 +41,14 @@ namespace Binder_Cart.Controllers
                 string userId = user.Id.ToString(); 
 
                 var query = from cartDetail in _db.CartDetails
-                            join cartHeader in _db.CartHeaders on cartDetail.CartHeaderId equals cartHeader.CartHeaderId into cartHeaderGroup
-                            from cartHeader in cartHeaderGroup.DefaultIfEmpty()
-                            join product in _db.Products on cartDetail.ProductId equals product.Id into productHeaderGroup
-                            from product in productHeaderGroup.DefaultIfEmpty()
-                            join brand in _db.Brands on product.BrandId equals brand.Id into brandGroup
-                            from brand in brandGroup.DefaultIfEmpty()
-                            join category in _db.Categories on product.CategoryId equals category.Id into categoryGroup
-                            from category in categoryGroup.DefaultIfEmpty()
+                            join cartHeader in _db.CartHeaders on cartDetail.CartHeaderId equals cartHeader.CartHeaderId 
+                            into cartHeaderGroup from cartHeader in cartHeaderGroup.DefaultIfEmpty()
+                            join product in _db.Products on cartDetail.ProductId equals product.Id 
+                            into productHeaderGroup from product in productHeaderGroup.DefaultIfEmpty()
+                            join brand in _db.Brands on product.BrandId equals brand.Id 
+                            into brandGroup from brand in brandGroup.DefaultIfEmpty()
+                            join category in _db.Categories on product.CategoryId equals category.Id 
+                            into categoryGroup from category in categoryGroup.DefaultIfEmpty()
                             where cartHeader.UserId == userId
                             select new
                             {

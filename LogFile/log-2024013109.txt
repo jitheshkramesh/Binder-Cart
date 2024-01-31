@@ -1,0 +1,14 @@
+2024-01-31 09:59:35.605 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 09:59:36.895 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-31 09:59:36.895 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-31 09:59:36.898 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 09:59:36.898 +05:30 [INF] Hosting environment: Development
+2024-01-31 09:59:36.898 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-31 09:59:39.481 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-31 09:59:40.127 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 654.5955ms
+2024-01-31 09:59:40.148 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 09:59:40.162 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 14.7676ms
+2024-01-31 09:59:40.192 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-31 09:59:40.271 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.8257ms
+2024-01-31 09:59:40.503 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-31 09:59:40.866 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 363.6148ms

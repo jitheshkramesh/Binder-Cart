@@ -1,0 +1,41 @@
+2024-01-30 12:14:48.329 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-30 12:14:48.863 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-30 12:14:48.863 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-30 12:14:48.866 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-30 12:14:48.866 +05:30 [INF] Hosting environment: Development
+2024-01-30 12:14:48.866 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-30 12:14:52.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-30 12:14:53.521 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 830.1091ms
+2024-01-30 12:14:53.614 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-30 12:14:53.614 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-30 12:14:53.640 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 25.9698ms
+2024-01-30 12:14:53.949 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 335.3216ms
+2024-01-30 12:14:54.375 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-30 12:14:54.680 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 306.3309ms
+2024-01-30 12:14:59.886 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - null null
+2024-01-30 12:14:59.897 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-30 12:14:59.927 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-30 12:15:01.952 +05:30 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-30 12:15:02.082 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-30 12:15:02.226 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 2292.8675ms
+2024-01-30 12:15:02.227 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-30 12:15:02.230 +05:30 [INF] HTTP GET /api/Category responded 200 in 2334.9348 ms
+2024-01-30 12:15:02.242 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 1927 application/json; charset=utf-8 2356.2631ms
+2024-01-30 12:59:56.357 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-30 12:59:56.368 +05:30 [INF] CORS policy execution successful.
+2024-01-30 12:59:56.370 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 7.8355 ms
+2024-01-30 12:59:56.371 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 14.4637ms
+2024-01-30 12:59:56.376 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-30 12:59:56.485 +05:30 [INF] CORS policy execution successful.
+2024-01-30 12:59:56.485 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-30 12:59:56.486 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-30 12:59:56.523 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-30 12:59:56.527 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-30 12:59:56.528 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 41.9265ms
+2024-01-30 12:59:56.528 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-30 12:59:56.528 +05:30 [INF] HTTP GET /api/Category responded 200 in 43.8184 ms
+2024-01-30 12:59:56.529 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 1927 application/json; charset=utf-8 153.2756ms

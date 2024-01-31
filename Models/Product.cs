@@ -11,7 +11,7 @@ namespace Binder_Cart.Models
         public string? ProductDescription { get; set; }
         [Required]
         [Precision(18, 2)]
-        public decimal ProductPrice { get; set; }
+        public decimal? ProductPrice { get; set; }
         public int? ProductStock { get; set; }
         public string? ProductImageUrl { get; set; }
 

@@ -38,7 +38,7 @@ namespace Binder_Cart.Controllers
         {
             try
             {
-                IEnumerable<Category> objList =await _db.Categories.ToListAsync();
+                IEnumerable<Category> objList =await _db.Categories.OrderByDescending(o => o.Id).ToListAsync();
                 _response.Result = _mapper.Map<IEnumerable<CategoryDto>>(objList);
             }
             catch (Exception ex)
@@ -51,11 +51,11 @@ namespace Binder_Cart.Controllers
 
         [HttpGet]
         [Route("{id:int}")]
-        public ResponseDto Get(int id)
+        public async Task<ResponseDto> Get(int id)
         {
             try
             {
-                Category obj = _db.Categories.First(u => u.Id == id);
+                Category obj = await _db.Categories.FirstAsync(u => u.Id == id);
                 _response.Result = _mapper.Map<CategoryDto>(obj);
             }
             catch (Exception ex)
@@ -120,15 +120,28 @@ namespace Binder_Cart.Controllers
                 var user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
                 string userId = user.Id.ToString();
 
-                Category category = _mapper.Map<Category>(CategoryDto);
-               // category.CategoryImageLocalPath = GetActualpath(CategoryDto.CategoryImageUrl);
-                category.CreatedDate = DateTime.Now;
-                category.UpdatedDate = DateTime.Now;
-                category.CreatedId = userId;
-                category.UpdatedId = userId;
-                _db.Categories.Add(category);
-                await _db.SaveChangesAsync();
-                _response.Result = _mapper.Map<CategoryDto>(category);
+                var categoryFromDb = await _db.Categories.AsNoTracking().FirstOrDefaultAsync(
+                        u => u.Id == CategoryDto.Id);
+                if (categoryFromDb == null)
+                {
+
+                    Category category = _mapper.Map<Category>(CategoryDto);
+                    // category.CategoryImageLocalPath = GetActualpath(CategoryDto.CategoryImageUrl);
+                    category.CreatedDate = DateTime.Now;
+                    category.UpdatedDate = DateTime.Now;
+                    category.CreatedId = userId;
+                    category.UpdatedId = userId;
+                    _db.Categories.Add(category);
+                    await _db.SaveChangesAsync();
+                }
+                else
+                {
+                    categoryFromDb.CategoryName = CategoryDto.CategoryName;
+                    categoryFromDb.CategoryImageUrl = CategoryDto.CategoryImageUrl;
+                    _db.Categories.Update(categoryFromDb);
+                    await _db.SaveChangesAsync();
+                }
+                _response.Result = _mapper.Map<CategoryDto>(categoryFromDb);
             }
             catch (Exception ex)
             {
@@ -203,6 +216,45 @@ namespace Binder_Cart.Controllers
                 }
                 _db.Categories.Remove(obj);
                 _db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
+        }
+
+        [HttpPatch("checkProto")]
+        public async Task<ResponseDto> checkProto([FromBody] CategoryDto CategoryDto)
+        {
+            try
+            {
+               // var user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
+                string userId = "07148931-4870-42b5-9094-9c85c1b3a026";//user.Id.ToString();
+
+                var categoryFromDb = await _db.Categories.AsNoTracking().FirstOrDefaultAsync(
+                        u => u.Id == CategoryDto.Id);
+                if (categoryFromDb == null)
+                {
+
+                    Category category = _mapper.Map<Category>(CategoryDto);
+                    // category.CategoryImageLocalPath = GetActualpath(CategoryDto.CategoryImageUrl);
+                    category.CreatedDate = DateTime.Now;
+                    category.UpdatedDate = DateTime.Now;
+                    category.CreatedId = userId;
+                    category.UpdatedId = userId;
+                    _db.Categories.Add(category);
+                    await _db.SaveChangesAsync();
+                }
+                else
+                {
+                    categoryFromDb.CategoryName = CategoryDto.CategoryName;
+                    categoryFromDb.CategoryImageUrl = CategoryDto.CategoryImageUrl;
+                    _db.Categories.Update(categoryFromDb);
+                    await _db.SaveChangesAsync();
+                }
+                _response.Result = _mapper.Map<CategoryDto>(categoryFromDb);
             }
             catch (Exception ex)
             {

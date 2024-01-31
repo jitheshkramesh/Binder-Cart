@@ -41,7 +41,7 @@ namespace Binder_Cart.Controllers
             {
                 //IEnumerable<Product> objList = await _db.Products.Include(brands => brands.Brand).Include(cat => cat.Category).ToListAsync(); 
                 //_response.Result = _mapper.Map<IEnumerable<ProductDto>>(objList);
-                _response.Result = await _db.Products.Include(brands => brands.Brand).Include(cat => cat.Category).ToListAsync();
+                _response.Result = await _db.Products.Include(brands => brands.Brand).Include(cat => cat.Category).OrderByDescending(o => o.Id).ToListAsync();
             }
             catch (Exception ex)
             {
@@ -53,11 +53,11 @@ namespace Binder_Cart.Controllers
 
         [HttpGet]
         [Route("{id:int}")]
-        public ResponseDto Get(int id)
+        public async Task<ResponseDto> Get(int id)
         {
             try
             {
-                Product obj = _db.Products.First(u => u.Id == id);
+                Product obj =await _db.Products.FirstAsync(u => u.Id == id);
                 _response.Result = _mapper.Map<ProductDto>(obj);
             }
             catch (Exception ex)
@@ -69,7 +69,7 @@ namespace Binder_Cart.Controllers
         }
 
         [HttpPost] 
-        public async Task<ResponseDto> Post([FromBody] ProductDto ProductDto)
+        public async Task<ResponseDto> Post([FromBody] ProductDto productDto)
         {
             try
             {
@@ -77,16 +77,36 @@ namespace Binder_Cart.Controllers
                 var user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
                 string userId = user.Id.ToString();
 
-                Product product = _mapper.Map<Product>(ProductDto);
-                // category.CategoryImageLocalPath = GetActualpath(CategoryDto.CategoryImageUrl);
-                product.CreatedDate = DateTime.Now;
-                product.UpdatedDate = DateTime.Now;
-                product.CreatedId = userId;
-                product.UpdatedId = userId;
-                _db.Products.Add(product);
-                await _db.SaveChangesAsync();
+                var productFromDb = await _db.Products.AsNoTracking().FirstOrDefaultAsync(
+                       u => u.Id == productDto.Id);
+                if (productFromDb == null)
+                {
+
+                    Product product = _mapper.Map<Product>(productDto);
+                    // category.CategoryImageLocalPath = GetActualpath(CategoryDto.CategoryImageUrl);
+                    product.CreatedDate = DateTime.Now;
+                    product.UpdatedDate = DateTime.Now;
+                    product.CreatedId = userId;
+                    product.UpdatedId = userId;
+                    _db.Products.Add(product);
+                    await _db.SaveChangesAsync();
+                }
+                else
+                {
+                    productFromDb.ProductName = productDto.ProductName;
+                    productFromDb.ProductImageUrl = productDto.ProductImageUrl;
+                    productFromDb.ProductDescription = productDto.ProductDescription;
+                    productFromDb.ProductStock = productDto.ProductStock;
+                    productFromDb.ProductPrice = productDto.ProductPrice;
+                    productFromDb.CategoryId = productDto.CategoryId;
+                    productFromDb.BrandId = productDto.BrandId;
+                    productFromDb.UpdatedDate = DateTime.Now;
+                    productFromDb.UpdatedId = userId;
+                    _db.Products.Update(productFromDb);
+                    await _db.SaveChangesAsync();
+                }
                
-                _response.Result = _mapper.Map<ProductDto>(product);
+                _response.Result = _mapper.Map<ProductDto>(productFromDb);
             }
             catch (Exception ex)
             {

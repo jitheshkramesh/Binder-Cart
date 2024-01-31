@@ -2,9 +2,11 @@ using AutoMapper;
 using Binder_Cart;
 using Binder_Cart.Data;
 using Binder_Cart.Exceptions;
+using Binder_Cart.Health;
 using Binder_Cart.Models;
 using Binder_Cart.Service;
 using Binder_Cart.Service.IService;
+using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
@@ -34,6 +36,8 @@ builder.Services.AddCors(opt =>
             .AllowAnyMethod();
     });
 });
+
+builder.Services.AddHealthChecks().AddCheck<DatabaseHealthCheck>(nameof(DatabaseHealthCheck));
 
 var conStr = builder.Configuration.GetConnectionString("connStr");
 builder.Services.AddSqlServer<ApplicationDbContext>(conStr);
@@ -130,6 +134,11 @@ app.UseSerilogRequestLogging();
 app.UseCors(_policyName);
 
 app.UseHttpsRedirection();
+
+app.MapHealthChecks("/_health", new()
+{
+    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+});
 
 app.UseAuthorization();
 

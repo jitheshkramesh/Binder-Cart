@@ -1,0 +1,1193 @@
+2024-01-29 19:26:24.019 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-29 19:26:24.530 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-29 19:26:24.530 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-29 19:26:24.532 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-29 19:26:24.533 +05:30 [INF] Hosting environment: Development
+2024-01-29 19:26:24.533 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-29 19:26:28.093 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-29 19:26:28.797 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 710.1568ms
+2024-01-29 19:26:28.845 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-29 19:26:28.845 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-29 19:26:28.855 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.0596ms
+2024-01-29 19:26:28.905 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.9491ms
+2024-01-29 19:26:28.949 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-29 19:26:29.225 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 275.9786ms
+2024-01-29 19:26:36.786 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - null null
+2024-01-29 19:26:36.804 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:26:36.809 +05:30 [INF] HTTP OPTIONS /api/Authentication/Login responded 204 in 9.7753 ms
+2024-01-29 19:26:36.811 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - 204 null null 25.0838ms
+2024-01-29 19:26:36.815 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/Authentication/Login - application/json 43
+2024-01-29 19:26:36.977 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-Jan-24 9:23:59 AM', Current time (UTC): '29-Jan-24 1:56:36 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-01-29 19:26:37.048 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-Jan-24 9:23:59 AM', Current time (UTC): '29-Jan-24 1:56:36 PM'.
+2024-01-29 19:26:37.049 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:26:37.055 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-29 19:26:37.110 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Binder_Cart.Dtos.LoginDto) on controller Binder_Cart.Controllers.AuthenticationController (Binder-Cart).
+2024-01-29 19:26:41.207 +05:30 [INF] Executed DbCommand (128ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-29 19:26:42.002 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-01-29 19:26:42.017 +05:30 [INF] Login successfully {"FirstName":"User5","LastName":"A","Id":"5c48bb4d-17be-4498-921d-28c6e4843113","UserName":"user5","NormalizedUserName":"USER5","Email":"user5@test.com","NormalizedEmail":"USER5@TEST.COM","EmailConfirmed":false,"PasswordHash":"AQAAAAIAAYagAAAAEHYjhaadnSKTcW31SWCO+/r4NfgTTBvYcIu5681ytyq0K6tB13PMqDL+xJOrSYmzTA==","SecurityStamp":"B3WKBJXSKKR5YKYHUL3RYEWW27DQ4LGA","ConcurrencyStamp":"aa07fb4a-22c1-440b-b17b-f3b90784332e","PhoneNumber":null,"PhoneNumberConfirmed":false,"TwoFactorEnabled":false,"LockoutEnd":null,"LockoutEnabled":true,"AccessFailedCount":0,"$type":"ApplicationUser"}
+2024-01-29 19:26:42.046 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-29 19:26:42.130 +05:30 [INF] Executed action Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart) in 5006.1464ms
+2024-01-29 19:26:42.133 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-29 19:26:42.138 +05:30 [INF] HTTP POST /api/Authentication/Login responded 200 in 5089.3692 ms
+2024-01-29 19:26:42.167 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/Authentication/Login - 200 421 application/json; charset=utf-8 5352.7734ms
+2024-01-29 19:26:46.944 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - null null
+2024-01-29 19:26:46.946 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:26:46.946 +05:30 [INF] HTTP OPTIONS /api/Authentication/Login responded 204 in 0.9614 ms
+2024-01-29 19:26:46.946 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Authentication/Login - 204 null null 1.7579ms
+2024-01-29 19:26:46.950 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7105/api/Authentication/Login - application/json 43
+2024-01-29 19:26:46.984 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:26:46.985 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-29 19:26:46.985 +05:30 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Binder_Cart.Dtos.LoginDto) on controller Binder_Cart.Controllers.AuthenticationController (Binder-Cart).
+2024-01-29 19:26:47.052 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-29 19:26:47.247 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-01-29 19:26:47.248 +05:30 [INF] Login successfully {"FirstName":"User5","LastName":"A","Id":"5c48bb4d-17be-4498-921d-28c6e4843113","UserName":"user5","NormalizedUserName":"USER5","Email":"user5@test.com","NormalizedEmail":"USER5@TEST.COM","EmailConfirmed":false,"PasswordHash":"AQAAAAIAAYagAAAAEHYjhaadnSKTcW31SWCO+/r4NfgTTBvYcIu5681ytyq0K6tB13PMqDL+xJOrSYmzTA==","SecurityStamp":"B3WKBJXSKKR5YKYHUL3RYEWW27DQ4LGA","ConcurrencyStamp":"aa07fb4a-22c1-440b-b17b-f3b90784332e","PhoneNumber":null,"PhoneNumberConfirmed":false,"TwoFactorEnabled":false,"LockoutEnd":null,"LockoutEnabled":true,"AccessFailedCount":0,"$type":"ApplicationUser"}
+2024-01-29 19:26:47.252 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-29 19:26:47.252 +05:30 [INF] Executed action Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart) in 266.9239ms
+2024-01-29 19:26:47.252 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.AuthenticationController.Login (Binder-Cart)'
+2024-01-29 19:26:47.253 +05:30 [INF] HTTP POST /api/Authentication/Login responded 200 in 268.3170 ms
+2024-01-29 19:26:47.253 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7105/api/Authentication/Login - 200 421 application/json; charset=utf-8 302.7992ms
+2024-01-29 19:27:52.831 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:27:52.834 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:27:52.835 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2119 ms
+2024-01-29 19:27:52.835 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 4.7816ms
+2024-01-29 19:27:52.845 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:27:52.846 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:27:52.846 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:27:52.854 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:27:53.042 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:27:53.130 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:27:53.147 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 292.2767ms
+2024-01-29 19:27:53.147 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:27:53.147 +05:30 [INF] HTTP GET /api/Category responded 200 in 301.4318 ms
+2024-01-29 19:27:53.147 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 303.1008ms
+2024-01-29 19:28:42.217 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:28:42.218 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:28:42.218 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.4674 ms
+2024-01-29 19:28:42.218 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.4484ms
+2024-01-29 19:28:42.222 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:28:42.224 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:28:42.224 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:28:42.224 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:28:42.230 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:28:42.232 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:28:42.233 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.6867ms
+2024-01-29 19:28:42.233 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:28:42.233 +05:30 [INF] HTTP GET /api/Category responded 200 in 9.4312 ms
+2024-01-29 19:28:42.233 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 11.8554ms
+2024-01-29 19:29:00.084 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:29:00.084 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:29:00.084 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2822 ms
+2024-01-29 19:29:00.090 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 6.4863ms
+2024-01-29 19:29:00.095 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:29:00.097 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:29:00.098 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:29:00.098 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:29:00.150 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:29:00.152 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:29:00.153 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 54.6887ms
+2024-01-29 19:29:00.153 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:29:00.153 +05:30 [INF] HTTP GET /api/Category responded 200 in 56.2032 ms
+2024-01-29 19:29:00.154 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 59.1668ms
+2024-01-29 19:29:47.771 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:29:47.772 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:29:47.774 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 2.4215 ms
+2024-01-29 19:29:47.775 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 4.0862ms
+2024-01-29 19:29:47.788 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:29:47.790 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:29:47.790 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:29:47.790 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:29:47.798 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:29:47.800 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:29:47.800 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 9.9546ms
+2024-01-29 19:29:47.800 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:29:47.800 +05:30 [INF] HTTP GET /api/Category responded 200 in 10.8050 ms
+2024-01-29 19:29:47.801 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 12.9725ms
+2024-01-29 19:30:28.285 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:30:28.286 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:30:28.286 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2348 ms
+2024-01-29 19:30:28.286 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.5705ms
+2024-01-29 19:30:28.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:30:28.290 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:30:28.290 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:30:28.290 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:30:28.296 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:30:28.297 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:30:28.298 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 7.2086ms
+2024-01-29 19:30:28.298 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:30:28.298 +05:30 [INF] HTTP GET /api/Category responded 200 in 7.7570 ms
+2024-01-29 19:30:28.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 9.9788ms
+2024-01-29 19:30:36.217 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:30:36.218 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:30:36.218 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.7426 ms
+2024-01-29 19:30:36.219 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.9846ms
+2024-01-29 19:30:36.235 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:30:36.236 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:30:36.236 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:30:36.237 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:30:36.247 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:30:36.249 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:30:36.249 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 12.3126ms
+2024-01-29 19:30:36.249 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:30:36.249 +05:30 [INF] HTTP GET /api/Category responded 200 in 13.1145 ms
+2024-01-29 19:30:36.250 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 15.5599ms
+2024-01-29 19:31:47.647 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:31:47.647 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:31:47.647 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.4855 ms
+2024-01-29 19:31:47.648 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.0591ms
+2024-01-29 19:31:47.656 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:31:47.657 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:31:47.657 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:31:47.657 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:31:47.668 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:31:47.672 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:31:47.672 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 14.8368ms
+2024-01-29 19:31:47.672 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:31:47.673 +05:30 [INF] HTTP GET /api/Category responded 200 in 15.6026 ms
+2024-01-29 19:31:47.673 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 17.0639ms
+2024-01-29 19:32:17.490 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:32:17.493 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:32:17.494 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2299 ms
+2024-01-29 19:32:17.494 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 3.8903ms
+2024-01-29 19:32:17.599 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:32:17.600 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:32:17.600 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:32:17.600 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:32:17.646 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:32:17.648 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:32:17.648 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 47.9589ms
+2024-01-29 19:32:17.648 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:32:17.648 +05:30 [INF] HTTP GET /api/Category responded 200 in 48.5353 ms
+2024-01-29 19:32:17.649 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 49.6788ms
+2024-01-29 19:32:28.515 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:32:28.515 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:32:28.516 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.3081 ms
+2024-01-29 19:32:28.517 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 2.8001ms
+2024-01-29 19:32:28.539 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:32:28.540 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:32:28.540 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:32:28.540 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:32:28.545 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:32:28.546 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:32:28.546 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 5.6495ms
+2024-01-29 19:32:28.546 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:32:28.546 +05:30 [INF] HTTP GET /api/Category responded 200 in 6.2949 ms
+2024-01-29 19:32:28.546 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 12.1021ms
+2024-01-29 19:32:42.577 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:32:42.578 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:32:42.579 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 1.4536 ms
+2024-01-29 19:32:42.579 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 2.1209ms
+2024-01-29 19:32:42.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:32:42.585 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:32:42.587 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:32:42.587 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:32:42.600 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:32:42.601 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:32:42.602 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 14.5392ms
+2024-01-29 19:32:42.602 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:32:42.602 +05:30 [INF] HTTP GET /api/Category responded 200 in 16.9480 ms
+2024-01-29 19:32:42.604 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 20.0679ms
+2024-01-29 19:33:24.378 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:33:24.379 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:33:24.379 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.3022 ms
+2024-01-29 19:33:24.382 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.9467ms
+2024-01-29 19:33:24.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:33:24.405 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:33:24.405 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:33:24.405 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:33:24.409 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:33:24.409 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:33:24.410 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 4.9645ms
+2024-01-29 19:33:24.410 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:33:24.410 +05:30 [INF] HTTP GET /api/Category responded 200 in 5.3610 ms
+2024-01-29 19:33:24.410 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 12.5191ms
+2024-01-29 19:34:09.437 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:34:09.440 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:34:09.440 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 2.5472 ms
+2024-01-29 19:34:09.440 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 3.4265ms
+2024-01-29 19:34:09.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:34:09.444 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:34:09.444 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:34:09.444 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:34:09.448 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:34:09.449 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:34:09.449 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 5.3591ms
+2024-01-29 19:34:09.449 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:34:09.450 +05:30 [INF] HTTP GET /api/Category responded 200 in 5.9029 ms
+2024-01-29 19:34:09.450 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 7.247ms
+2024-01-29 19:34:12.593 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-29 19:34:12.594 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:34:12.594 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.4254 ms
+2024-01-29 19:34:12.594 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 1.7054ms
+2024-01-29 19:34:12.601 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-29 19:34:12.604 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:34:12.604 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-29 19:34:12.614 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-29 19:34:12.636 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-29 19:34:12.710 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c0].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c1].[CategoryName], [c1].[CategoryImageUrl], [b].[BrandName], [b].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+LEFT JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+LEFT JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [Categories] AS [c1] ON [p].[CategoryId] = [c1].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-29 19:34:12.713 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:34:12.725 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 111.2364ms
+2024-01-29 19:34:12.725 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-29 19:34:12.725 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 121.2763 ms
+2024-01-29 19:34:12.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 665 application/json; charset=utf-8 125.1841ms
+2024-01-29 19:34:43.847 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - null null
+2024-01-29 19:34:43.849 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:34:43.849 +05:30 [INF] HTTP OPTIONS /api/cart/GetCart responded 204 in 0.1377 ms
+2024-01-29 19:34:43.849 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/cart/GetCart - 204 null null 4.0916ms
+2024-01-29 19:34:43.860 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/cart/GetCart - application/json null
+2024-01-29 19:34:43.860 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:34:43.861 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-29 19:34:43.861 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] GetCart() on controller Binder_Cart.Controllers.CartController (Binder-Cart).
+2024-01-29 19:34:43.872 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-01-29 19:34:43.887 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[CartDetailsId] AS [CartDetailId], [c0].[CartHeaderId], [c].[ProductId], [c].[Count], [p].[ProductName], [p].[ProductImageUrl], [p].[ProductPrice], [c1].[CategoryName], [c1].[CategoryImageUrl], [b].[BrandName], [b].[BrandImageUrl]
+FROM [CartDetails] AS [c]
+LEFT JOIN [CartHeaders] AS [c0] ON [c].[CartHeaderId] = [c0].[CartHeaderId]
+LEFT JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+LEFT JOIN [Brands] AS [b] ON [p].[BrandId] = [b].[Id]
+LEFT JOIN [Categories] AS [c1] ON [p].[CategoryId] = [c1].[Id]
+WHERE [c0].[UserId] = @__userId_0
+2024-01-29 19:34:43.888 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:34:43.889 +05:30 [INF] Executed action Binder_Cart.Controllers.CartController.GetCart (Binder-Cart) in 28.016ms
+2024-01-29 19:34:43.889 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CartController.GetCart (Binder-Cart)'
+2024-01-29 19:34:43.889 +05:30 [INF] HTTP GET /api/cart/GetCart responded 200 in 28.9845 ms
+2024-01-29 19:34:43.890 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/cart/GetCart - 200 665 application/json; charset=utf-8 30.7797ms
+2024-01-29 19:34:47.059 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:34:47.060 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:34:47.060 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2247 ms
+2024-01-29 19:34:47.060 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.1109ms
+2024-01-29 19:34:47.064 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:34:47.064 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:34:47.064 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:34:47.064 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:34:47.070 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:34:47.071 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:34:47.071 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.9333ms
+2024-01-29 19:34:47.071 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:34:47.072 +05:30 [INF] HTTP GET /api/Category responded 200 in 7.4012 ms
+2024-01-29 19:34:47.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 9.5244ms
+2024-01-29 19:35:30.768 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:35:30.769 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:35:30.769 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1365 ms
+2024-01-29 19:35:30.769 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.216ms
+2024-01-29 19:35:30.777 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:35:30.779 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:35:30.779 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:35:30.780 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:35:30.785 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:35:30.786 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:35:30.787 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.8318ms
+2024-01-29 19:35:30.787 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:35:30.787 +05:30 [INF] HTTP GET /api/Category responded 200 in 9.1912 ms
+2024-01-29 19:35:30.787 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 10.0178ms
+2024-01-29 19:35:44.245 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:35:44.247 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:35:44.247 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1328 ms
+2024-01-29 19:35:44.247 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.4834ms
+2024-01-29 19:35:44.259 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:35:44.266 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:35:44.266 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:35:44.266 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:35:44.273 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:35:44.274 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:35:44.275 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.611ms
+2024-01-29 19:35:44.275 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:35:44.275 +05:30 [INF] HTTP GET /api/Category responded 200 in 9.4214 ms
+2024-01-29 19:35:44.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 16.4054ms
+2024-01-29 19:35:49.672 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:35:49.672 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:35:49.672 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2109 ms
+2024-01-29 19:35:49.672 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.1111ms
+2024-01-29 19:35:49.677 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:35:49.678 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:35:49.679 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:35:49.679 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:35:49.689 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:35:49.691 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:35:49.691 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 12.1724ms
+2024-01-29 19:35:49.691 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:35:49.691 +05:30 [INF] HTTP GET /api/Category responded 200 in 13.2923 ms
+2024-01-29 19:35:49.692 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 15.6499ms
+2024-01-29 19:36:34.656 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:36:34.657 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:36:34.657 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2606 ms
+2024-01-29 19:36:34.657 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.4837ms
+2024-01-29 19:36:34.678 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:36:34.679 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:36:34.679 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:36:34.679 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:36:34.686 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:36:34.687 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:36:34.688 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.8503ms
+2024-01-29 19:36:34.688 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:36:34.688 +05:30 [INF] HTTP GET /api/Category responded 200 in 9.5624 ms
+2024-01-29 19:36:34.689 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 10.852ms
+2024-01-29 19:38:35.699 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:38:35.699 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:38:35.699 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1604 ms
+2024-01-29 19:38:35.700 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.4217ms
+2024-01-29 19:38:35.712 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:38:35.712 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:38:35.712 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:38:35.712 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:38:35.717 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:38:35.717 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:38:35.719 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.6692ms
+2024-01-29 19:38:35.719 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:38:35.719 +05:30 [INF] HTTP GET /api/Category responded 200 in 7.1595 ms
+2024-01-29 19:38:35.720 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 7.8998ms
+2024-01-29 19:38:53.825 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:38:53.825 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:38:53.825 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.5481 ms
+2024-01-29 19:38:53.825 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 2.3523ms
+2024-01-29 19:38:53.829 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:38:53.829 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:38:53.829 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:38:53.829 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:38:53.834 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:38:53.835 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:38:53.835 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 5.8104ms
+2024-01-29 19:38:53.835 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:38:53.835 +05:30 [INF] HTTP GET /api/Category responded 200 in 6.2132 ms
+2024-01-29 19:38:53.835 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 6.8584ms
+2024-01-29 19:39:20.702 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:39:20.703 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:39:20.703 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1617 ms
+2024-01-29 19:39:20.703 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.5351ms
+2024-01-29 19:39:20.726 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:39:20.727 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:39:20.727 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:39:20.727 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:39:20.733 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:39:20.734 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:39:20.735 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 7.6063ms
+2024-01-29 19:39:20.735 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:39:20.735 +05:30 [INF] HTTP GET /api/Category responded 200 in 8.1954 ms
+2024-01-29 19:39:20.735 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 9.6145ms
+2024-01-29 19:39:48.015 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:39:48.017 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:39:48.017 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.6249 ms
+2024-01-29 19:39:48.018 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 2.6381ms
+2024-01-29 19:39:48.028 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:39:48.029 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:39:48.030 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:39:48.030 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:39:48.043 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:39:48.046 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:39:48.056 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 26.5223ms
+2024-01-29 19:39:48.057 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:39:48.058 +05:30 [INF] HTTP GET /api/Category responded 200 in 28.2484 ms
+2024-01-29 19:39:48.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 31.7885ms
+2024-01-29 19:39:53.035 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:39:53.035 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:39:53.035 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2891 ms
+2024-01-29 19:39:53.036 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.1622ms
+2024-01-29 19:39:53.187 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:39:53.188 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:39:53.188 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:39:53.189 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:39:53.280 +05:30 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:39:53.283 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:39:53.283 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 94.7074ms
+2024-01-29 19:39:53.284 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:39:53.284 +05:30 [INF] HTTP GET /api/Category responded 200 in 95.2750 ms
+2024-01-29 19:39:53.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 96.5468ms
+2024-01-29 19:39:57.508 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:39:57.509 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:39:57.509 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1557 ms
+2024-01-29 19:39:57.509 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.0469ms
+2024-01-29 19:39:57.515 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:39:57.516 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:39:57.516 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:39:57.516 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:39:57.523 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:39:57.524 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:39:57.525 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.084ms
+2024-01-29 19:39:57.525 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:39:57.525 +05:30 [INF] HTTP GET /api/Category responded 200 in 8.8599 ms
+2024-01-29 19:39:57.525 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 10.825ms
+2024-01-29 19:42:18.783 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:42:18.783 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:42:18.783 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1870 ms
+2024-01-29 19:42:18.784 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.7863ms
+2024-01-29 19:42:18.789 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:42:18.792 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:42:18.792 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:42:18.792 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:42:18.798 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:42:18.799 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:42:18.799 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 7.2069ms
+2024-01-29 19:42:18.799 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:42:18.799 +05:30 [INF] HTTP GET /api/Category responded 200 in 7.7163 ms
+2024-01-29 19:42:18.799 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 10.2366ms
+2024-01-29 19:42:50.467 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-29 19:42:50.521 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 53.8334ms
+2024-01-29 19:42:50.536 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-29 19:42:50.537 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-29 19:42:50.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.871ms
+2024-01-29 19:42:50.579 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.371ms
+2024-01-29 19:42:50.684 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-29 19:42:50.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.5924ms
+2024-01-29 19:43:00.634 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:43:00.635 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:43:00.635 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.4030 ms
+2024-01-29 19:43:00.635 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 2.6883ms
+2024-01-29 19:43:00.640 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:43:00.642 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:43:00.642 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:43:00.642 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:43:00.648 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:43:00.649 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:43:00.650 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 7.7783ms
+2024-01-29 19:43:00.650 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:43:00.650 +05:30 [INF] HTTP GET /api/Category responded 200 in 8.4704 ms
+2024-01-29 19:43:00.650 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 10.5652ms
+2024-01-29 19:43:18.648 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:43:18.649 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:43:18.649 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1395 ms
+2024-01-29 19:43:18.649 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.3941ms
+2024-01-29 19:43:18.653 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:43:18.654 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:43:18.654 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:43:18.654 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:43:18.658 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:43:18.662 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:43:18.662 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 7.9435ms
+2024-01-29 19:43:18.663 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:43:18.663 +05:30 [INF] HTTP GET /api/Category responded 200 in 8.5447 ms
+2024-01-29 19:43:18.663 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 10.1744ms
+2024-01-29 19:43:28.067 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:43:28.067 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:43:28.067 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0968 ms
+2024-01-29 19:43:28.067 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.0853ms
+2024-01-29 19:43:28.072 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:43:28.073 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:43:28.073 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:43:28.073 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:43:28.079 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:43:28.080 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:43:28.081 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 7.3233ms
+2024-01-29 19:43:28.081 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:43:28.081 +05:30 [INF] HTTP GET /api/Category responded 200 in 7.7356 ms
+2024-01-29 19:43:28.081 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 8.9737ms
+2024-01-29 19:43:46.872 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:43:46.873 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:43:46.873 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2009 ms
+2024-01-29 19:43:46.873 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.1567ms
+2024-01-29 19:43:46.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:43:46.879 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:43:46.880 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:43:46.880 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:43:46.884 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:43:46.887 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:43:46.887 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.9387ms
+2024-01-29 19:43:46.887 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:43:46.887 +05:30 [INF] HTTP GET /api/Category responded 200 in 8.0300 ms
+2024-01-29 19:43:46.887 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 10.1347ms
+2024-01-29 19:44:06.447 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:44:06.447 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:44:06.447 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0897 ms
+2024-01-29 19:44:06.447 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.883ms
+2024-01-29 19:44:06.457 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:44:06.463 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:44:06.464 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:44:06.465 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:44:06.481 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:44:06.482 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:44:06.482 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 17.0845ms
+2024-01-29 19:44:06.482 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:44:06.483 +05:30 [INF] HTTP GET /api/Category responded 200 in 19.3764 ms
+2024-01-29 19:44:06.483 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 25.4459ms
+2024-01-29 19:44:14.420 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:44:14.420 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:44:14.420 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0714 ms
+2024-01-29 19:44:14.420 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 9.9341ms
+2024-01-29 19:44:14.447 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:44:14.447 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:44:14.447 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:44:14.448 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:44:14.465 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:44:14.466 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:44:14.467 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 19.4561ms
+2024-01-29 19:44:14.467 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:44:14.469 +05:30 [INF] HTTP GET /api/Category responded 200 in 21.5554 ms
+2024-01-29 19:44:14.470 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 23.1934ms
+2024-01-29 19:44:58.619 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:44:58.619 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:44:58.619 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0929 ms
+2024-01-29 19:44:58.619 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.7015ms
+2024-01-29 19:44:58.689 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:44:58.689 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:44:58.689 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:44:58.689 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:44:58.696 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:44:58.698 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:44:58.698 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.7281ms
+2024-01-29 19:44:58.698 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:44:58.698 +05:30 [INF] HTTP GET /api/Category responded 200 in 9.2339 ms
+2024-01-29 19:44:58.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 10.4556ms
+2024-01-29 19:45:23.566 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:45:23.566 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:45:23.566 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1131 ms
+2024-01-29 19:45:23.566 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.4168ms
+2024-01-29 19:45:23.572 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:45:23.573 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:45:23.574 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:45:23.574 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:45:23.597 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:45:23.598 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:45:23.598 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 24.1369ms
+2024-01-29 19:45:23.598 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:45:23.598 +05:30 [INF] HTTP GET /api/Category responded 200 in 25.0394 ms
+2024-01-29 19:45:23.598 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 26.1989ms
+2024-01-29 19:45:54.487 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:45:54.487 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:45:54.487 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1028 ms
+2024-01-29 19:45:54.487 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.5765ms
+2024-01-29 19:45:54.494 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:45:54.494 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:45:54.494 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:45:54.495 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:45:54.542 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:45:54.542 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:45:54.543 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 47.3782ms
+2024-01-29 19:45:54.543 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:45:54.544 +05:30 [INF] HTTP GET /api/Category responded 200 in 49.2521 ms
+2024-01-29 19:45:54.544 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 50.7487ms
+2024-01-29 19:46:02.361 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:46:02.361 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:02.361 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1179 ms
+2024-01-29 19:46:02.361 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.667ms
+2024-01-29 19:46:02.365 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:46:02.366 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:02.366 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:02.367 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:46:02.375 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:46:02.376 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:46:02.377 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 9.9526ms
+2024-01-29 19:46:02.377 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:02.377 +05:30 [INF] HTTP GET /api/Category responded 200 in 10.6266 ms
+2024-01-29 19:46:02.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 12.1896ms
+2024-01-29 19:46:05.853 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:46:05.854 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:05.854 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1177 ms
+2024-01-29 19:46:05.854 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.3087ms
+2024-01-29 19:46:05.857 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:46:05.859 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:05.859 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:05.860 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:46:05.867 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:46:05.869 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:46:05.869 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 9.3959ms
+2024-01-29 19:46:05.869 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:05.869 +05:30 [INF] HTTP GET /api/Category responded 200 in 10.2612 ms
+2024-01-29 19:46:05.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 11.8756ms
+2024-01-29 19:46:17.330 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:46:17.331 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:17.331 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0943 ms
+2024-01-29 19:46:17.331 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.2357ms
+2024-01-29 19:46:17.335 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:46:17.335 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:17.335 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:17.335 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:46:17.343 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:46:17.346 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:46:17.346 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 10.6706ms
+2024-01-29 19:46:17.346 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:17.346 +05:30 [INF] HTTP GET /api/Category responded 200 in 11.1888 ms
+2024-01-29 19:46:17.347 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 12.6288ms
+2024-01-29 19:46:37.903 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:46:37.903 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:37.903 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0791 ms
+2024-01-29 19:46:37.903 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.804ms
+2024-01-29 19:46:37.909 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:46:37.909 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:37.909 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:37.909 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:46:37.913 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:46:37.915 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:46:37.915 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.0723ms
+2024-01-29 19:46:37.915 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:37.915 +05:30 [INF] HTTP GET /api/Category responded 200 in 6.3581 ms
+2024-01-29 19:46:37.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 7.4272ms
+2024-01-29 19:46:48.217 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:46:48.217 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:48.217 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2441 ms
+2024-01-29 19:46:48.217 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.6551ms
+2024-01-29 19:46:48.222 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:46:48.224 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:46:48.224 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:48.224 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:46:48.227 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:46:48.229 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:46:48.229 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 4.8166ms
+2024-01-29 19:46:48.229 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:46:48.229 +05:30 [INF] HTTP GET /api/Category responded 200 in 5.1704 ms
+2024-01-29 19:46:48.229 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 7.2821ms
+2024-01-29 19:47:57.915 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:47:57.916 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:47:57.916 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1799 ms
+2024-01-29 19:47:57.916 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 2.1766ms
+2024-01-29 19:47:57.923 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:47:57.924 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:47:57.924 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:47:57.924 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:47:57.930 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:47:57.930 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:47:57.931 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.3859ms
+2024-01-29 19:47:57.931 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:47:57.931 +05:30 [INF] HTTP GET /api/Category responded 200 in 7.0950 ms
+2024-01-29 19:47:57.932 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 9.1958ms
+2024-01-29 19:48:37.280 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:48:37.281 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:48:37.281 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2511 ms
+2024-01-29 19:48:37.281 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.2487ms
+2024-01-29 19:48:37.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:48:37.347 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:48:37.347 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:48:37.347 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:48:37.424 +05:30 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:48:37.425 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:48:37.426 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 79.1891ms
+2024-01-29 19:48:37.426 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:48:37.426 +05:30 [INF] HTTP GET /api/Category responded 200 in 79.7205 ms
+2024-01-29 19:48:37.427 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 80.4897ms
+2024-01-29 19:48:41.725 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:48:41.725 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:48:41.725 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0724 ms
+2024-01-29 19:48:41.725 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.874ms
+2024-01-29 19:48:41.729 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:48:41.730 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:48:41.731 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:48:41.731 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:48:41.737 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:48:41.739 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:48:41.739 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.5944ms
+2024-01-29 19:48:41.739 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:48:41.740 +05:30 [INF] HTTP GET /api/Category responded 200 in 9.3647 ms
+2024-01-29 19:48:41.740 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 11.4245ms
+2024-01-29 19:48:49.559 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:48:49.559 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:48:49.559 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1657 ms
+2024-01-29 19:48:49.559 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.1855ms
+2024-01-29 19:48:49.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:48:49.564 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:48:49.564 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:48:49.564 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:48:49.569 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:48:49.570 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:48:49.570 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.0889ms
+2024-01-29 19:48:49.570 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:48:49.570 +05:30 [INF] HTTP GET /api/Category responded 200 in 6.3538 ms
+2024-01-29 19:48:49.570 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 7.4106ms
+2024-01-29 19:49:13.203 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:49:13.203 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:49:13.203 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.2406 ms
+2024-01-29 19:49:13.204 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 2.1864ms
+2024-01-29 19:49:13.212 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:49:13.212 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:49:13.212 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:49:13.212 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:49:13.220 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:49:13.221 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:49:13.221 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.9263ms
+2024-01-29 19:49:13.221 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:49:13.221 +05:30 [INF] HTTP GET /api/Category responded 200 in 9.2558 ms
+2024-01-29 19:49:13.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 9.7455ms
+2024-01-29 19:49:33.834 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-29 19:49:33.865 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 30.7444ms
+2024-01-29 19:49:33.887 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-29 19:49:33.890 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-29 19:49:33.890 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8504ms
+2024-01-29 19:49:33.929 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.0207ms
+2024-01-29 19:49:34.024 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-29 19:49:34.061 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.35ms
+2024-01-29 19:49:36.904 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:49:36.904 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:49:36.904 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0779 ms
+2024-01-29 19:49:36.904 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.8321ms
+2024-01-29 19:49:36.907 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:49:36.907 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:49:36.907 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:49:36.907 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:49:36.911 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:49:36.912 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:49:36.912 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 4.393ms
+2024-01-29 19:49:36.912 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:49:36.912 +05:30 [INF] HTTP GET /api/Category responded 200 in 4.7595 ms
+2024-01-29 19:49:36.912 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 5.9178ms
+2024-01-29 19:53:08.785 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:53:08.786 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:53:08.787 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.3270 ms
+2024-01-29 19:53:08.787 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 2.214ms
+2024-01-29 19:53:08.795 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:53:08.799 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:53:08.799 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:53:08.809 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:53:08.835 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:53:08.839 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:53:08.839 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 29.5353ms
+2024-01-29 19:53:08.839 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:53:08.839 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 40.4341 ms
+2024-01-29 19:53:08.839 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 44.5406ms
+2024-01-29 19:53:50.852 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:53:50.852 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:53:50.852 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.0620 ms
+2024-01-29 19:53:50.852 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 0.8435ms
+2024-01-29 19:53:50.855 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:53:50.856 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:53:50.856 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:53:50.856 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:53:50.863 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:53:50.865 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:53:50.865 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.9401ms
+2024-01-29 19:53:50.865 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:53:50.866 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 9.3790 ms
+2024-01-29 19:53:50.866 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 10.701ms
+2024-01-29 19:53:57.422 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:53:57.423 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:53:57.423 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1101 ms
+2024-01-29 19:53:57.423 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.7739ms
+2024-01-29 19:53:57.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:53:57.434 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:53:57.434 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:53:57.435 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:53:57.440 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:53:57.442 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:53:57.443 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.0912ms
+2024-01-29 19:53:57.443 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:53:57.443 +05:30 [INF] HTTP GET /api/Category responded 200 in 8.6536 ms
+2024-01-29 19:53:57.443 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 10.1667ms
+2024-01-29 19:54:00.081 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:54:00.081 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:54:00.082 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.0657 ms
+2024-01-29 19:54:00.082 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 0.5057ms
+2024-01-29 19:54:00.085 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:54:00.086 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:54:00.086 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:54:00.087 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:54:00.095 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:54:00.095 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:54:00.095 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 8.7748ms
+2024-01-29 19:54:00.095 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:54:00.096 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 9.2384 ms
+2024-01-29 19:54:00.096 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 10.8475ms
+2024-01-29 19:54:18.063 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:54:18.064 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:54:18.064 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0746 ms
+2024-01-29 19:54:18.064 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.7629ms
+2024-01-29 19:54:18.067 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:54:18.069 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:54:18.069 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:54:18.069 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:54:18.072 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:54:18.073 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:54:18.074 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 4.432ms
+2024-01-29 19:54:18.074 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:54:18.074 +05:30 [INF] HTTP GET /api/Category responded 200 in 5.1872 ms
+2024-01-29 19:54:18.074 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 7.1882ms
+2024-01-29 19:54:20.040 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/2 - null null
+2024-01-29 19:54:20.040 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:54:20.040 +05:30 [INF] HTTP OPTIONS /api/Category/2 responded 204 in 0.0718 ms
+2024-01-29 19:54:20.040 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/2 - 204 null null 1.0701ms
+2024-01-29 19:54:20.044 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/2 - application/json null
+2024-01-29 19:54:20.045 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:54:20.045 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:54:20.045 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:54:20.058 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:54:20.059 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:54:20.060 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 14.4185ms
+2024-01-29 19:54:20.060 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:54:20.060 +05:30 [INF] HTTP GET /api/Category/2 responded 200 in 14.9248 ms
+2024-01-29 19:54:20.060 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/2 - 200 177 application/json; charset=utf-8 17.3521ms
+2024-01-29 19:55:45.222 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-29 19:55:45.300 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 78.1166ms
+2024-01-29 19:55:45.330 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-29 19:55:45.332 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-29 19:55:45.340 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 8.1122ms
+2024-01-29 19:55:45.367 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.7072ms
+2024-01-29 19:55:45.839 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-29 19:55:45.865 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.1586ms
+2024-01-29 19:55:46.835 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/2 - null null
+2024-01-29 19:55:46.836 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:55:46.836 +05:30 [INF] HTTP OPTIONS /api/Category/2 responded 204 in 0.0880 ms
+2024-01-29 19:55:46.836 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/2 - 204 null null 0.7889ms
+2024-01-29 19:55:46.840 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/2 - application/json null
+2024-01-29 19:55:46.841 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:55:46.841 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:55:46.841 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:55:46.848 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:55:46.848 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:55:46.849 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 7.9794ms
+2024-01-29 19:55:46.849 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:55:46.849 +05:30 [INF] HTTP GET /api/Category/2 responded 200 in 8.5015 ms
+2024-01-29 19:55:46.850 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/2 - 200 177 application/json; charset=utf-8 10.113ms
+2024-01-29 19:55:50.870 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:55:50.870 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:55:50.870 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0844 ms
+2024-01-29 19:55:50.871 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.4692ms
+2024-01-29 19:55:50.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:55:50.878 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:55:50.878 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:55:50.878 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:55:50.883 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:55:50.884 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:55:50.885 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.0622ms
+2024-01-29 19:55:50.885 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:55:50.885 +05:30 [INF] HTTP GET /api/Category responded 200 in 6.4454 ms
+2024-01-29 19:55:50.885 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 8.3288ms
+2024-01-29 19:55:52.032 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:55:52.033 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:55:52.033 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.0961 ms
+2024-01-29 19:55:52.033 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 0.8858ms
+2024-01-29 19:55:52.036 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:55:52.036 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:55:52.036 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:55:52.036 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:55:52.045 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:55:52.046 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:55:52.046 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 9.5746ms
+2024-01-29 19:55:52.046 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:55:52.046 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 9.8913 ms
+2024-01-29 19:55:52.047 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 11.0057ms
+2024-01-29 19:57:15.784 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:57:15.785 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:57:15.785 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.1009 ms
+2024-01-29 19:57:15.785 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 0.9241ms
+2024-01-29 19:57:15.788 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:57:15.789 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:57:15.790 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:57:15.790 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:57:15.798 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:57:15.799 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:57:15.799 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 9.5602ms
+2024-01-29 19:57:15.799 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:57:15.799 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 10.2409 ms
+2024-01-29 19:57:15.800 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 12.0803ms
+2024-01-29 19:57:46.097 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-29 19:57:46.162 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 64.8343ms
+2024-01-29 19:57:46.184 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-29 19:57:46.185 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-29 19:57:46.186 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.9514ms
+2024-01-29 19:57:46.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.8653ms
+2024-01-29 19:57:46.697 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-29 19:57:46.717 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.1748ms
+2024-01-29 19:57:47.801 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:57:47.801 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:57:47.801 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.1460 ms
+2024-01-29 19:57:47.801 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 0.9636ms
+2024-01-29 19:57:47.805 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:57:47.806 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:57:47.806 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:57:47.806 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:57:47.811 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:57:47.813 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:57:47.813 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.9838ms
+2024-01-29 19:57:47.813 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:57:47.814 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 7.5602 ms
+2024-01-29 19:57:47.814 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 9.1486ms
+2024-01-29 19:57:52.229 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:57:52.229 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:57:52.229 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.0480 ms
+2024-01-29 19:57:52.229 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 0.5106ms
+2024-01-29 19:57:52.232 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:57:52.233 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:57:52.233 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:57:52.233 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:57:52.243 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:57:52.244 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:57:52.244 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 10.6033ms
+2024-01-29 19:57:52.244 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:57:52.244 +05:30 [INF] HTTP GET /api/Category responded 200 in 11.1756 ms
+2024-01-29 19:57:52.244 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 12.4865ms
+2024-01-29 19:57:53.738 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:57:53.739 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:57:53.740 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.2378 ms
+2024-01-29 19:57:53.740 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 2.0816ms
+2024-01-29 19:57:53.743 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:57:53.744 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:57:53.744 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:57:53.744 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:57:53.747 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:57:53.748 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:57:53.749 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 4.9511ms
+2024-01-29 19:57:53.749 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:57:53.749 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 5.4173 ms
+2024-01-29 19:57:53.749 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 6.7692ms
+2024-01-29 19:58:07.956 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:58:07.957 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:58:07.957 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1361 ms
+2024-01-29 19:58:07.957 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.2592ms
+2024-01-29 19:58:07.962 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:58:07.963 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:58:07.964 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:58:07.964 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:58:07.969 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:58:07.970 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:58:07.970 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.5381ms
+2024-01-29 19:58:07.970 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:58:07.971 +05:30 [INF] HTTP GET /api/Category responded 200 in 7.0826 ms
+2024-01-29 19:58:07.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 9.1531ms
+2024-01-29 19:58:10.314 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:58:10.315 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:58:10.315 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.1380 ms
+2024-01-29 19:58:10.315 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 1.2647ms
+2024-01-29 19:58:10.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:58:10.321 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:58:10.321 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:58:10.321 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:58:10.330 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:58:10.332 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:58:10.333 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 11.1917ms
+2024-01-29 19:58:10.333 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:58:10.333 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 11.8334 ms
+2024-01-29 19:58:10.333 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 13.115ms
+2024-01-29 19:59:29.751 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-29 19:59:29.785 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 33.7273ms
+2024-01-29 19:59:29.822 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-29 19:59:29.823 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-29 19:59:29.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.3195ms
+2024-01-29 19:59:29.849 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.6201ms
+2024-01-29 19:59:29.947 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-29 19:59:29.963 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.2729ms
+2024-01-29 19:59:31.756 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:59:31.757 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:31.757 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.0744 ms
+2024-01-29 19:59:31.757 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 1.1263ms
+2024-01-29 19:59:31.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:59:31.760 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:31.761 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:31.761 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:59:31.765 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:59:31.766 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:59:31.766 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 5.3022ms
+2024-01-29 19:59:31.766 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:31.766 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 5.7860 ms
+2024-01-29 19:59:31.766 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 7.1917ms
+2024-01-29 19:59:34.687 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:59:34.687 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:34.687 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1330 ms
+2024-01-29 19:59:34.688 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.592ms
+2024-01-29 19:59:34.693 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:59:34.694 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:34.694 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:34.694 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:59:34.697 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:59:34.698 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:59:34.698 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 3.9889ms
+2024-01-29 19:59:34.698 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:34.698 +05:30 [INF] HTTP GET /api/Category responded 200 in 4.2897 ms
+2024-01-29 19:59:34.698 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 5.4164ms
+2024-01-29 19:59:35.671 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/2 - null null
+2024-01-29 19:59:35.672 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:35.672 +05:30 [INF] HTTP OPTIONS /api/Category/2 responded 204 in 0.2366 ms
+2024-01-29 19:59:35.672 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/2 - 204 null null 0.7572ms
+2024-01-29 19:59:35.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/2 - application/json null
+2024-01-29 19:59:35.675 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:35.675 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:35.675 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:59:35.681 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:59:35.682 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:59:35.683 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 7.7021ms
+2024-01-29 19:59:35.683 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:35.683 +05:30 [INF] HTTP GET /api/Category/2 responded 200 in 8.0812 ms
+2024-01-29 19:59:35.683 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/2 - 200 177 application/json; charset=utf-8 9.0123ms
+2024-01-29 19:59:50.939 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 19:59:50.940 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:50.940 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 0.1615 ms
+2024-01-29 19:59:50.941 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 1.7815ms
+2024-01-29 19:59:50.951 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 19:59:50.952 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:50.952 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:50.953 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:59:50.957 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 19:59:50.959 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:59:50.960 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 6.9932ms
+2024-01-29 19:59:50.960 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:50.960 +05:30 [INF] HTTP GET /api/Category responded 200 in 7.5754 ms
+2024-01-29 19:59:50.960 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 9.1399ms
+2024-01-29 19:59:52.384 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - null null
+2024-01-29 19:59:52.385 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:52.385 +05:30 [INF] HTTP OPTIONS /api/Category/3 responded 204 in 0.0720 ms
+2024-01-29 19:59:52.385 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category/3 - 204 null null 1.3302ms
+2024-01-29 19:59:52.389 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category/3 - application/json null
+2024-01-29 19:59:52.389 +05:30 [INF] CORS policy execution successful.
+2024-01-29 19:59:52.389 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:52.389 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get(Int32) on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 19:59:52.395 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='12000']
+SELECT TOP(1) [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2024-01-29 19:59:52.397 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 19:59:52.397 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 7.3363ms
+2024-01-29 19:59:52.397 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 19:59:52.397 +05:30 [INF] HTTP GET /api/Category/3 responded 200 in 7.7333 ms
+2024-01-29 19:59:52.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category/3 - 200 168 application/json; charset=utf-8 8.8622ms

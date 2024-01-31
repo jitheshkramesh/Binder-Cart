@@ -1,0 +1,58 @@
+2024-01-29 18:46:39.828 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-29 18:46:40.935 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-29 18:46:40.936 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-29 18:46:40.941 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-29 18:46:40.942 +05:30 [INF] Hosting environment: Development
+2024-01-29 18:46:40.942 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-29 18:46:41.721 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-29 18:46:42.348 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 639.8761ms
+2024-01-29 18:46:42.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-29 18:46:42.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-29 18:46:42.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 65.0057ms
+2024-01-29 18:46:42.560 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 146.2726ms
+2024-01-29 18:46:42.713 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-29 18:46:42.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 267.3681ms
+2024-01-29 18:47:54.202 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 18:47:54.226 +05:30 [INF] CORS policy execution successful.
+2024-01-29 18:47:54.231 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 7.2746 ms
+2024-01-29 18:47:54.232 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 30.2459ms
+2024-01-29 18:47:54.243 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 18:47:54.406 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-Jan-24 9:23:59 AM', Current time (UTC): '29-Jan-24 1:17:54 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-01-29 18:47:54.663 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-Jan-24 9:23:59 AM', Current time (UTC): '29-Jan-24 1:17:54 PM'.
+2024-01-29 18:47:54.664 +05:30 [INF] CORS policy execution successful.
+2024-01-29 18:47:54.671 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 18:47:54.706 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 18:47:58.955 +05:30 [INF] Executed DbCommand (93ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 18:47:59.183 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 18:47:59.523 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 4802.2925ms
+2024-01-29 18:47:59.525 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 18:47:59.528 +05:30 [INF] HTTP GET /api/Category responded 200 in 4865.3646 ms
+2024-01-29 18:47:59.564 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 5320.9949ms
+2024-01-29 18:52:25.389 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7105/api/Category - null null
+2024-01-29 18:52:25.415 +05:30 [INF] CORS policy execution successful.
+2024-01-29 18:52:25.416 +05:30 [INF] HTTP OPTIONS /api/Category responded 204 in 20.7130 ms
+2024-01-29 18:52:25.417 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7105/api/Category - 204 null null 29.3028ms
+2024-01-29 18:52:25.425 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - application/json null
+2024-01-29 18:52:25.430 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-Jan-24 9:23:59 AM', Current time (UTC): '29-Jan-24 1:22:25 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-01-29 18:52:25.432 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '29-Jan-24 9:23:59 AM', Current time (UTC): '29-Jan-24 1:22:25 PM'.
+2024-01-29 18:52:25.433 +05:30 [INF] CORS policy execution successful.
+2024-01-29 18:52:25.434 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 18:52:25.435 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-29 18:52:25.602 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-29 18:52:25.606 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-29 18:52:25.607 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 171.5693ms
+2024-01-29 18:52:25.608 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-29 18:52:25.608 +05:30 [INF] HTTP GET /api/Category responded 200 in 175.4104 ms
+2024-01-29 18:52:25.609 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 732 application/json; charset=utf-8 184.6723ms

@@ -1,0 +1,226 @@
+2024-01-30 10:00:51.499 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-30 10:00:51.847 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-30 10:00:51.847 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-30 10:00:51.849 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-30 10:00:51.850 +05:30 [INF] Hosting environment: Development
+2024-01-30 10:00:51.850 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-30 10:00:55.389 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-30 10:00:55.783 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 400.1316ms
+2024-01-30 10:00:55.817 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-30 10:00:55.817 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-30 10:00:55.864 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 46.691ms
+2024-01-30 10:00:55.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.5708ms
+2024-01-30 10:00:55.979 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-30 10:00:56.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 319.1914ms
+2024-01-30 10:02:53.017 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-30 10:02:53.305 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-30 10:02:53.306 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-30 10:02:53.307 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-30 10:02:53.307 +05:30 [INF] Hosting environment: Development
+2024-01-30 10:02:53.307 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-30 10:02:56.665 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-30 10:02:57.093 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 439.6472ms
+2024-01-30 10:02:57.135 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-30 10:02:57.135 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-30 10:02:57.148 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 12.3841ms
+2024-01-30 10:02:57.215 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.6458ms
+2024-01-30 10:02:57.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-30 10:02:57.808 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 508.3792ms
+2024-01-30 10:03:00.098 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7105/_health - null null
+2024-01-30 10:03:00.126 +05:30 [INF] Executing endpoint 'Health checks'
+2024-01-30 10:03:00.143 +05:30 [INF] Executed endpoint 'Health checks'
+2024-01-30 10:03:00.148 +05:30 [INF] HTTP GET /_health responded 200 in 32.7090 ms
+2024-01-30 10:03:00.150 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7105/_health - 200 null text/plain 52.0959ms
+2024-01-30 10:03:01.836 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7105/_health - null null
+2024-01-30 10:03:01.837 +05:30 [INF] Executing endpoint 'Health checks'
+2024-01-30 10:03:01.838 +05:30 [INF] Executed endpoint 'Health checks'
+2024-01-30 10:03:01.838 +05:30 [INF] HTTP GET /_health responded 200 in 1.0444 ms
+2024-01-30 10:03:01.838 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7105/_health - 200 null text/plain 1.7513ms
+2024-01-30 10:03:26.960 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-30 10:03:27.403 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-30 10:03:27.403 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-30 10:03:27.405 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-30 10:03:27.405 +05:30 [INF] Hosting environment: Development
+2024-01-30 10:03:27.405 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-30 10:03:31.198 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-30 10:03:31.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 283.1952ms
+2024-01-30 10:03:31.487 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-30 10:03:31.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.6151ms
+2024-01-30 10:03:31.513 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-30 10:03:31.585 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.7169ms
+2024-01-30 10:03:31.636 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-30 10:03:31.820 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 184.2612ms
+2024-01-30 10:03:34.031 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7105/_health - null null
+2024-01-30 10:03:34.039 +05:30 [INF] Executing endpoint 'Health checks'
+2024-01-30 10:03:34.043 +05:30 [INF] Executed endpoint 'Health checks'
+2024-01-30 10:03:34.045 +05:30 [INF] HTTP GET /_health responded 200 in 9.2598 ms
+2024-01-30 10:03:34.046 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7105/_health - 200 null text/plain 15.0747ms
+2024-01-30 10:03:35.028 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7105/_health - null null
+2024-01-30 10:03:35.029 +05:30 [INF] Executing endpoint 'Health checks'
+2024-01-30 10:03:35.029 +05:30 [INF] Executed endpoint 'Health checks'
+2024-01-30 10:03:35.029 +05:30 [INF] HTTP GET /_health responded 200 in 0.6636 ms
+2024-01-30 10:03:35.030 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7105/_health - 200 null text/plain 1.1146ms
+2024-01-30 10:08:35.324 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-30 10:08:35.586 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-30 10:08:35.587 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-30 10:08:35.589 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-30 10:08:35.590 +05:30 [INF] Hosting environment: Development
+2024-01-30 10:08:35.590 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-30 10:08:35.996 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-30 10:08:36.361 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 369.5494ms
+2024-01-30 10:08:36.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-30 10:08:36.378 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.4725ms
+2024-01-30 10:08:36.390 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-30 10:08:36.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.843ms
+2024-01-30 10:08:36.514 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-30 10:08:36.738 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 224.0713ms
+2024-01-30 10:08:39.551 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7105/_health - null null
+2024-01-30 10:08:39.563 +05:30 [INF] Executing endpoint 'Health checks'
+2024-01-30 10:08:40.810 +05:30 [ERR] An error occurred using the connection to database 'BinderDb2' on server 'DESKTOP-EU1SPV7'.
+2024-01-30 10:08:40.900 +05:30 [ERR] Health check DatabaseHealthCheck threw an unhandled exception after 436.7114ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "BinderDb2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-EU1SPV7\Jithesh'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at Binder_Cart.Health.DatabaseHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart\Health\DatabaseHealthCheck.cs:line 20
+   at Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService.RunCheckAsync(HealthCheckRegistration registration, CancellationToken cancellationToken)
+ClientConnectionId:f9334edd-26bc-421c-bb08-483b0155ad10
+Error Number:4060,State:1,Class:11
+2024-01-30 10:08:40.964 +05:30 [INF] Executed endpoint 'Health checks'
+2024-01-30 10:08:40.967 +05:30 [ERR] HTTP GET /_health responded 503 in 1407.4517 ms
+2024-01-30 10:08:40.968 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7105/_health - 503 null text/plain 1416.8012ms
+2024-01-30 10:10:50.999 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-30 10:10:51.256 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-30 10:10:51.256 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-30 10:10:51.258 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-30 10:10:51.258 +05:30 [INF] Hosting environment: Development
+2024-01-30 10:10:51.258 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-30 10:10:53.735 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-30 10:10:54.049 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 315.9185ms
+2024-01-30 10:10:54.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-30 10:10:54.068 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.2091ms
+2024-01-30 10:10:54.081 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-30 10:10:54.135 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.6699ms
+2024-01-30 10:10:54.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-30 10:10:54.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 244.1385ms
+2024-01-30 10:10:56.845 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7105/_health - null null
+2024-01-30 10:10:56.851 +05:30 [INF] Executing endpoint 'Health checks'
+2024-01-30 10:10:58.314 +05:30 [ERR] An error occurred using the connection to database 'BinderDb2' on server 'DESKTOP-EU1SPV7'.
+2024-01-30 10:10:58.386 +05:30 [ERR] Health check DatabaseHealthCheck threw an unhandled exception after 482.1234ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "BinderDb2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-EU1SPV7\Jithesh'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at Binder_Cart.Health.DatabaseHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart\Health\DatabaseHealthCheck.cs:line 20
+   at Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService.RunCheckAsync(HealthCheckRegistration registration, CancellationToken cancellationToken)
+ClientConnectionId:a7335b28-4eef-4982-833d-888e54c853d3
+Error Number:4060,State:1,Class:11
+2024-01-30 10:10:59.043 +05:30 [INF] Executed endpoint 'Health checks'
+2024-01-30 10:10:59.047 +05:30 [ERR] HTTP GET /_health responded 503 in 2196.9641 ms
+2024-01-30 10:10:59.048 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7105/_health - 503 null application/json 2203.7704ms
+2024-01-30 10:11:30.523 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7105/_health - null null
+2024-01-30 10:11:30.524 +05:30 [INF] Executing endpoint 'Health checks'
+2024-01-30 10:11:30.559 +05:30 [ERR] An error occurred using the connection to database 'BinderDb2' on server 'DESKTOP-EU1SPV7'.
+2024-01-30 10:11:30.606 +05:30 [ERR] Health check DatabaseHealthCheck threw an unhandled exception after 63.9763ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "BinderDb2" requested by the login. The login failed.
+Login failed for user 'DESKTOP-EU1SPV7\Jithesh'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at Binder_Cart.Health.DatabaseHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart\Health\DatabaseHealthCheck.cs:line 20
+   at Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService.RunCheckAsync(HealthCheckRegistration registration, CancellationToken cancellationToken)
+ClientConnectionId:2b6da890-5aa4-4f73-bdcf-4013c194a3bc
+Error Number:4060,State:1,Class:11
+2024-01-30 10:11:30.608 +05:30 [INF] Executed endpoint 'Health checks'
+2024-01-30 10:11:30.608 +05:30 [ERR] HTTP GET /_health responded 503 in 84.6795 ms
+2024-01-30 10:11:30.609 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7105/_health - 503 null application/json 85.7173ms
+2024-01-30 10:11:46.448 +05:30 [INF] User profile is available. Using 'C:\Users\Jithesh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-30 10:11:46.860 +05:30 [INF] Now listening on: https://localhost:7105
+2024-01-30 10:11:46.860 +05:30 [INF] Now listening on: http://localhost:5177
+2024-01-30 10:11:46.862 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-30 10:11:46.862 +05:30 [INF] Hosting environment: Development
+2024-01-30 10:11:46.863 +05:30 [INF] Content root path: C:\Jithesh\Project Files\Test\ASP.NET\Binder-Cart
+2024-01-30 10:11:48.332 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/index.html - null null
+2024-01-30 10:11:48.704 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/index.html - 200 null text/html;charset=utf-8 381.1782ms
+2024-01-30 10:11:48.742 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-30 10:11:48.742 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/_vs/browserLink - null null
+2024-01-30 10:11:48.753 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 10.9576ms
+2024-01-30 10:11:48.809 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.599ms
+2024-01-30 10:11:48.899 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - null null
+2024-01-30 10:11:49.148 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.8397ms
+2024-01-30 10:11:51.554 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7105/_health - null null
+2024-01-30 10:11:51.563 +05:30 [INF] Executing endpoint 'Health checks'
+2024-01-30 10:11:52.953 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+select 1
+2024-01-30 10:11:52.983 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT 1
+2024-01-30 10:11:53.053 +05:30 [INF] Executed endpoint 'Health checks'
+2024-01-30 10:11:53.055 +05:30 [INF] HTTP GET /_health responded 200 in 1495.4204 ms
+2024-01-30 10:11:53.057 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7105/_health - 200 null application/json 1503.0906ms
+2024-01-30 10:12:16.142 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7105/api/Category - null null
+2024-01-30 10:12:16.151 +05:30 [INF] Executing endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-30 10:12:16.170 +05:30 [INF] Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Binder_Cart.Dtos.ResponseDto] Get() on controller Binder_Cart.Controllers.CategoryController (Binder-Cart).
+2024-01-30 10:12:16.453 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='12000']
+SELECT [c].[Id], [c].[CategoryImageLocalPath], [c].[CategoryImageUrl], [c].[CategoryName], [c].[CreatedDate], [c].[CreatedId], [c].[UpdatedDate], [c].[UpdatedId]
+FROM [Categories] AS [c]
+2024-01-30 10:12:16.602 +05:30 [INF] Executing ObjectResult, writing value of type 'Binder_Cart.Dtos.ResponseDto'.
+2024-01-30 10:12:16.748 +05:30 [INF] Executed action Binder_Cart.Controllers.CategoryController.Get (Binder-Cart) in 574.3836ms
+2024-01-30 10:12:16.749 +05:30 [INF] Executed endpoint 'Binder_Cart.Controllers.CategoryController.Get (Binder-Cart)'
+2024-01-30 10:12:16.749 +05:30 [INF] HTTP GET /api/Category responded 200 in 598.1418 ms
+2024-01-30 10:12:16.749 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7105/api/Category - 200 1811 application/json; charset=utf-8 607.4859ms
